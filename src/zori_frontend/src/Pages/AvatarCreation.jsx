@@ -51,7 +51,7 @@ export default function AvatarCreatorComponent() {
         <div className="model-wrapper">
           <div className="modal-box">
             <h3 className="text-lg font-bold">
-              Instructions for creating your own 3D Avatar
+              Instructions for creating your own Avatar
             </h3>
             <div className="py-4">
               <ol>
