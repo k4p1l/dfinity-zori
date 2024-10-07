@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #2e177b;
+  background: url(./assets/purple.jpg) no-repeat right center fixed;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+/* body::-webkit-scrollbar {
+  display: none;
+} */

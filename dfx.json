@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "zori_backend": {
+      "main": "src/zori_backend/main.mo",
+      "type": "motoko"
+    },
+    "zori_frontend": {
+      "dependencies": [
+        "zori_backend"
+      ],
+      "source": [
+        "src/zori_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "zori_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
