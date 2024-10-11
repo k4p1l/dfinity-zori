@@ -10,7 +10,7 @@ const FourthPage = () => {
       >
         <div className="form-field">
           <label className="label" htmlFor="entry.188529269">
-            Name:
+            *Name:
           </label>
           <input
             className="cu-input"
@@ -22,7 +22,7 @@ const FourthPage = () => {
         </div>
         <div className="form-field">
           <label className="label" htmlFor="entry.406433151">
-            Email:
+            *Email:
           </label>
           <input
             className="cu-input"
@@ -34,7 +34,7 @@ const FourthPage = () => {
         </div>
         <div className="form-field">
           <label className="label" htmlFor="entry.1759612096">
-            Subject:
+            *Subject:
           </label>
           <input
             type="text"
@@ -45,13 +45,57 @@ const FourthPage = () => {
         </div>
         <div className="form-field">
           <label className="label" htmlFor="entry.342776823">
-            Message:
+            *Message:
           </label>
           <input
             type="text"
             className="cu-input"
             id="entry.342776823"
             name="entry.342776823"
+          />
+        </div>
+        <div className="form-field">
+          <label className="label" htmlFor="entry.1419860086">
+            *What interests you in Zori?
+          </label>
+          <select className="cu-input" name="entry.1419860086" id="entry.1419860086">
+            <option value="3D Spaces">3D Spaces</option>
+            <option value="3D Avatar">3D Avatar</option>
+            <option value="NFT's">NFTs</option>
+            <option value="All of the above">All of the Above</option>
+          </select>
+        </div>
+        <div className="form-field">
+          <label className="label" htmlFor="entry.553623353">
+            Phone No.
+          </label>
+          <input
+            type="text"
+            className="cu-input"
+            id="entry.553623353"
+            name="entry.553623353"
+          />
+        </div>{" "}
+        <div className="form-field">
+          <label className="label" htmlFor="entry.1444762476">
+            Discord
+          </label>
+          <input
+            type="text"
+            className="cu-input"
+            id="entry.1444762476"
+            name="entry.1444762476"
+          />
+        </div>
+        <div className="form-field">
+          <label className="label" htmlFor="entry.442681221">
+            Telegram
+          </label>
+          <input
+            type="text"
+            className="cu-input"
+            id="entry.442681221"
+            name="entry.442681221"
           />
         </div>
         <div className="form-field">

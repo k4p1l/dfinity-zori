@@ -17,6 +17,7 @@ import GetStarted from "./Pages/GetStarted";
 
 import MainLayout from "./Layouts/MainLayout";
 import NoNavbarLayout from "./Layouts/NoNavbarLayout";
+import MintForm from "./Pages/MintForm";
 
 function LandingPage() {
   return (
@@ -110,6 +111,14 @@ function App() {
           element={
             <MainLayout>
               <GetStarted />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/mintNFT"
+          element={
+            <MainLayout>
+              <MintForm />
             </MainLayout>
           }
         />

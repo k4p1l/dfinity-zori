@@ -1,0 +1,143 @@
+@font-face {
+  font-family: aesthetic;
+  src: url(../../../public/fonts/Aesthetic-Regular.ttf);
+}
+
+@font-face {
+  font-family: ebg;
+  src: url(../../../public/fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
+.marketplace-container {
+  position: relative;
+  width: 100%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.slide {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(16, 16, 16, 0.6) 100%
+  );
+  backdrop-filter: blur(20px);
+  height: 80vh;
+  border-radius: 20px;
+  color: aliceblue;
+  width: 100%;
+  display: none;
+  padding: 10px;
+}
+
+.slide h2 {
+  font-family: hanson;
+  font-size: 2em;
+}
+
+.slide p {
+  font-family: Helvetica;
+  font-weight: 500;
+}
+
+.slide h3 {
+  font-family: power;
+  font-size: 1.2em;
+}
+
+.slide.active {
+  display: block; /* Only show the active slide */
+  border-bottom: 4px solid #a14299;
+  box-shadow: 0 4px 0px rgb(255, 116, 243);
+}
+
+.slider-button {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 2em;
+}
+
+.slider-button.prev {
+  left: 40px;
+}
+
+.slider-button.next {
+  right: 40px;
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide .nft-image {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.marketplace-content {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.marketplace-content p span {
+  font-family: power;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: -1.8px;
+  background: linear-gradient(90deg, #ceabff 0%, #9661e1 50%, #e8f400 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 4px;
+  mix-blend-mode: screen;
+  filter: contrast(120%) brightness(120%);
+}
+
+.marketplace-content p {
+  font-family: ebg;
+  font-weight: normal;
+  font-size: 24px;
+  color: #e5d2ff;
+  text-align: center;
+}
+
+.mint-button {
+  background: linear-gradient(90deg, #9661e1 20%, #ceabff 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: aesthetic;
+  font-weight: bold;
+  font-size: 24px;
+  border: 2.2px solid #9661e1;
+  padding: 0.2em 0.8em 0em 0.8em;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -34,9 +34,9 @@ const Navbar = () => {
           3D Spaces
         </Link>
       </div>
-      <div className="get-started">
-        <Link to="/getStarted">Get Started</Link>
-      </div>
+      <Link className="get-started-wrapper" to="/getStarted">
+        <button className="get-started">Get Started ✨</button>
+      </Link>
       <div className="backdrop"></div>
 
       {/* Hamburger menu for smaller screens */}
