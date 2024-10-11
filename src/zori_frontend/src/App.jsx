@@ -1,4 +1,4 @@
-import { zori_backend } from "declarations/zori_backend";
+import * as zori_backend from "declarations/zori_backend";
 import React, { useEffect } from "react";
 import FirstPage from "./FirstPage";
 import SecondPage from "./SecondPage";
@@ -14,10 +14,13 @@ import Spaces from "./Pages/Spaces";
 import AvatarCreatorComponent from "./Pages/AvatarCreation";
 import AvatarDisplay from "./Pages/AvatarDisplay";
 import GetStarted from "./Pages/GetStarted";
-
 import MainLayout from "./Layouts/MainLayout";
 import NoNavbarLayout from "./Layouts/NoNavbarLayout";
 import MintForm from "./Pages/MintForm";
+
+import { defaultProviders } from "@connect2ic/core/providers";
+import { createClient } from "@connect2ic/core";
+import { Connect2ICProvider } from "@connect2ic/react";
 
 function LandingPage() {
   return (
@@ -127,4 +130,15 @@ function App() {
   );
 }
 
-export default App;
+const client = createClient({
+  canisters: {
+    zori_backend,
+  },
+  providers: defaultProviders,
+});
+
+export default () => (
+  <Connect2ICProvider client={client}>
+    <App />
+  </Connect2ICProvider>
+);

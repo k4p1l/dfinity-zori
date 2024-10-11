@@ -10,8 +10,8 @@
 }
 
 .get-started-content {
-  backdrop-filter: blur(20px);
-  background-color: rgba(3, 0, 20, 0.3);
+  /* backdrop-filter: blur(20px); */
+  /* background-color: rgba(3, 0, 20, 0.3); */
   padding: 10px 30px 30px 30px;
   border-radius: 20px;
   color: rgb(239, 225, 255);
@@ -49,6 +49,8 @@
 .email-form,
 .web3-form {
   margin-top: 20px;
+  height: 40vh;
+
 }
 
 .email-form input {

@@ -2,8 +2,10 @@ import { useState } from "react";
 import logo from "./assets/zori-logo.png";
 import "./assets/css/Navbar.css";
 import { Link } from "react-router-dom";
+import { useConnect } from "@connect2ic/react";
 
 const Navbar = () => {
+  const { isConnected, disconnect } = useConnect();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -34,9 +36,15 @@ const Navbar = () => {
           3D Spaces
         </Link>
       </div>
-      <Link className="get-started-wrapper" to="/getStarted">
-        <button className="get-started">Get Started ✨</button>
-      </Link>
+      {isConnected ? (
+        <button className="get-started-wrapper" onClick={disconnect}>
+          <button className="logout">Logout</button>
+        </button>
+      ) : (
+        <Link className="get-started-wrapper" to="/getStarted">
+          <button className="get-started">Get Started ✨</button>
+        </Link>
+      )}
       <div className="backdrop"></div>
 
       {/* Hamburger menu for smaller screens */}

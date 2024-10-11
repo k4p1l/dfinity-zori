@@ -78,7 +78,8 @@
   /* box-shadow: 10px 10px 10px #c753bd; */
 }
 
-.get-started {
+.get-started,
+.logout {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
     30deg,
@@ -113,6 +114,14 @@
   100% {
     background-position: 0% 50%; /* End position */
   }
+}
+
+.logout {
+  animation: none;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #af79fa 0%, #691bd7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* Phones and small devices */
