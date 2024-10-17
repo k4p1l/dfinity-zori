@@ -101,3 +101,65 @@
   left: 4px;
   color: #ceabff;
 }
+
+.confirmation-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  /* padding: 20px; */
+  z-index: 2;
+  height: 150%;
+  width: 100vw;
+  font-family: neue montreal;
+  font-weight: bold;
+}
+
+.confirmation-modal p {
+  font-weight: normal;
+}
+
+.confirmation-modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: linear-gradient(
+    -40deg,
+    rgba(255, 41, 248, 0.6) 0%,
+    rgb(255, 255, 255) 40%
+  );
+  backdrop-filter: blur(20px);
+  color: #370933;
+}
+
+.confirmation-modal-wrapper img {
+  border-radius: 10px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  gap: 40px;
+  font-family: aesthetic;
+  font-size: 1.2em;
+}
+
+.confirmation-buttons button {
+  border-bottom: 2px solid rgba(55, 9, 51, 0);
+  transition: all 0.5s ease;
+}
+
+.confirmation-buttons button:hover {
+  border-bottom: 2px solid rgba(55, 9, 51, 1);
+}

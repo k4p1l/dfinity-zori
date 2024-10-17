@@ -17,6 +17,7 @@ import GetStarted from "./Pages/GetStarted";
 import MainLayout from "./Layouts/MainLayout";
 import NoNavbarLayout from "./Layouts/NoNavbarLayout";
 import MintForm from "./Pages/MintForm";
+import DisplayNFT from "./Pages/DisplayNFT";
 
 import { defaultProviders } from "@connect2ic/core/providers";
 import { createClient } from "@connect2ic/core";
@@ -122,6 +123,14 @@ function App() {
           element={
             <MainLayout>
               <MintForm />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/display-nft"
+          element={
+            <MainLayout>
+              <DisplayNFT />
             </MainLayout>
           }
         />

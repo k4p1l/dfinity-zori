@@ -141,3 +141,38 @@
   align-items: center;
   justify-content: center;
 }
+
+.marquee {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #e8f400;
+  overflow: hidden;
+  translate: 0% 180%;
+}
+
+.marquee h1 {
+  display: inline-block;
+  padding: 20px 0;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #9661e1;
+  animation: marquee 5s linear infinite;
+  transition: all 0.3s ease-in-out;
+  font-family: medium;
+  text-wrap: nowrap;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Hover effects */
+.marquee:hover h1 {
+  animation-play-state: paused;
+}

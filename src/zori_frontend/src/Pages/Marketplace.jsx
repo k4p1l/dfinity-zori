@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../assets/css/Marketplace.css";
 import { Link } from "react-router-dom";
+import nft1 from "../../public/images/nfts/1.jpg";
+import nft2 from "../../public/images/nfts/5.jpg";
+import nft3 from "../../public/images/nfts/4.jpg";
 
 const Marketplace = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,7 +11,7 @@ const Marketplace = () => {
   const slides = [
     {
       id: 1,
-      imageUrl: "public/images/nfts/1.jpg",
+      imageUrl: nft1,
       title: "NFT 1",
       price: "2",
       currency: "ICP",
@@ -16,7 +19,7 @@ const Marketplace = () => {
     },
     {
       id: 2,
-      imageUrl: "public/images/nfts/5.jpg",
+      imageUrl: nft2,
       title: "NFT 2",
       price: "3",
       currency: "ICP",
@@ -24,7 +27,7 @@ const Marketplace = () => {
     },
     {
       id: 3,
-      imageUrl: "public/images/nfts/4.jpg",
+      imageUrl: nft3,
       title: "NFT 3",
       price: "1.5",
       currency: "ICP",
@@ -42,7 +45,14 @@ const Marketplace = () => {
 
   return (
     <div className="marketplace-container">
-      <button className="slider-button prev" onClick={prevSlide}>
+      <div class="marquee">
+        <h1>Coming Soon ✨ &nbsp;</h1>
+        <h1>Coming Soon ✨ &nbsp;</h1>
+        <h1>Coming Soon ✨ &nbsp;</h1>
+        <h1>Coming Soon ✨ &nbsp;</h1>
+        <h1>Coming Soon ✨ &nbsp;</h1>
+      </div>
+      {/* <button className="slider-button prev" onClick={prevSlide}>
         &#10094;
       </button>
 
@@ -73,7 +83,7 @@ const Marketplace = () => {
         <Link to="/mintNFT">
           <button className="mint-button">Mint NFT</button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

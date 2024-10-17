@@ -33,7 +33,7 @@
   top: 0px;
   object-fit: cover;
   z-index: -1;
-  filter: blur(2px) brightness(80%) contrast(120%);
+  filter: blur(1px) brightness(80%) contrast(120%);
   padding-bottom: 2px;
   border-bottom: 8px solid #ea00ff;
   border-image: linear-gradient(to right, #ea00ff, #ffc23f) 1;
@@ -47,6 +47,7 @@
   font-size: 48px;
   font-family: power;
   text-transform: uppercase;
+  letter-spacing: 2px;
   /* background: linear-gradient(-90deg, #ffffff, #9966ff);
   -webkit-background-clip: text;
   background-clip: text;

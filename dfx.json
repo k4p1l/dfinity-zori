@@ -1,7 +1,7 @@
 {
   "canisters": {
     "zori_backend": {
-      "main": "src/zori_backend/main.mo",
+      "main": "src/zori_backend/OpenD.mo",
       "type": "motoko"
     },
     "zori_frontend": {
