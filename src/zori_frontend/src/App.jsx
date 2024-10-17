@@ -18,6 +18,7 @@ import MainLayout from "./Layouts/MainLayout";
 import NoNavbarLayout from "./Layouts/NoNavbarLayout";
 import MintForm from "./Pages/MintForm";
 import DisplayNFT from "./Pages/DisplayNFT";
+import WebGLComponent from "./Pages/webglcomponent";
 
 import { defaultProviders } from "@connect2ic/core/providers";
 import { createClient } from "@connect2ic/core";
@@ -131,6 +132,14 @@ function App() {
           element={
             <MainLayout>
               <DisplayNFT />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/zori-avatar"
+          element={
+            <MainLayout>
+              <WebGLComponent />
             </MainLayout>
           }
         />

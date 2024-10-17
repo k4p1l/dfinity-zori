@@ -18,7 +18,7 @@ const Avatar = () => {
         </p>
         <div className="avatar-buttons">
           <div className="avatar-button">
-            <a href="zoriAvatar">Zori Avatar</a>
+            <Link to="/zori-avatar">Zori Avatar</Link>
             <ion-icon name="arrow-forward-sharp"></ion-icon>
           </div>
           <div className="avatar-button">

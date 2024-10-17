@@ -27,7 +27,7 @@ export default function AvatarDisplay() {
     const loadLogo = async () => {
       try {
         const img = new Image();
-        img.src = "src/zori_frontend/src/assets/zori-logo.png";
+        img.src = "src/assets/zori-logo.png";
         await new Promise((resolve, reject) => {
           img.onload = resolve;
           img.onerror = reject;
@@ -64,14 +64,22 @@ export default function AvatarDisplay() {
     const avatarImage = new Image();
     avatarImage.src = dataURL;
     avatarImage.onload = () => {
+      // Draw the logo in the center and make it large
+      const logoAspectRatio = logoRef.current.width / logoRef.current.height;
+      let logoWidth = finalCanvas.width * 0.8;
+      let logoHeight = logoWidth / logoAspectRatio;
+
+      // If the calculated height is too large, adjust the dimensions
+      if (logoHeight > finalCanvas.height * 0.8) {
+        logoHeight = finalCanvas.height * 0.8;
+        logoWidth = logoHeight * logoAspectRatio;
+      }
+      const logoX = (finalCanvas.width - logoWidth) / 2;
+      const logoY = (finalCanvas.height - logoHeight) / 2;
+      context.drawImage(logoRef.current, logoX, logoY, logoWidth, logoHeight);
+
+      // Draw the avatar image on top of the logo
       context.drawImage(avatarImage, 0, 0);
-      context.drawImage(
-        logoRef.current,
-        finalCanvas.width - 100,
-        finalCanvas.height - 100,
-        80,
-        80
-      );
 
       const finalURL = finalCanvas.toDataURL("image/png");
       const link = document.createElement("a");
