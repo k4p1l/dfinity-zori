@@ -1,17 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "./assets/zori-logo.png";
 import "./assets/css/Navbar.css";
 import { Link } from "react-router-dom";
 import { useConnect } from "@connect2ic/react";
+import { Tooltip } from "react-tooltip";
 
 const Navbar = () => {
   const { isConnected, disconnect } = useConnect();
   const [isOpen, setIsOpen] = useState(false);
+  const [avatarUrl, setAvatarUrl] = useState("");
+  console.log(isConnected);
+
+  useEffect(() => {
+    if (isConnected) {
+      const randomAvatar = `https://robohash.org/${Math.random()}.png?size=50x50`;
+      setAvatarUrl(randomAvatar);
+    }
+  }, [isConnected]);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-
+  console.log(avatarUrl);
   return (
     <nav className="navbar">
       <div>
@@ -38,7 +48,11 @@ const Navbar = () => {
       </div>
       {isConnected ? (
         <button className="get-started-wrapper" onClick={disconnect}>
-          <button className="logout">Logout</button>
+          <img src={avatarUrl} id="logout" alt="User Avatar" />
+          <Tooltip anchorSelect="#logout" place="bottom">
+            Logout
+          </Tooltip>
+          {/* <button className="logout">Logout</button> */}
         </button>
       ) : (
         <Link className="get-started-wrapper" to="/getStarted">
