@@ -1,6 +1,7 @@
 import React, { Suspense, useRef, useEffect } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
+import logo from "../../public/images/zori-logo.png";
 
 function AvatarModel({ url }) {
   const { scene } = useGLTF(url);
@@ -27,7 +28,7 @@ export default function AvatarDisplay() {
     const loadLogo = async () => {
       try {
         const img = new Image();
-        img.src = "src/assets/zori-logo.png";
+        img.src = logo;
         await new Promise((resolve, reject) => {
           img.onload = resolve;
           img.onerror = reject;
