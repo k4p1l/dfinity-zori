@@ -32,7 +32,7 @@ const FourthPage = () => {
             required
           />
         </div>
-        <div className="form-field">
+        {/* <div className="form-field">
           <label className="label" htmlFor="entry.1759612096">
             *Subject:
           </label>
@@ -42,7 +42,7 @@ const FourthPage = () => {
             id="entry.1759612096"
             name="entry.1759612096"
           />
-        </div>
+        </div> */}
         <div className="form-field">
           <label className="label" htmlFor="entry.342776823">
             *Message:
@@ -58,7 +58,11 @@ const FourthPage = () => {
           <label className="label" htmlFor="entry.1419860086">
             *What interests you in Zori?
           </label>
-          <select className="cu-input" name="entry.1419860086" id="entry.1419860086">
+          <select
+            className="cu-input"
+            name="entry.1419860086"
+            id="entry.1419860086"
+          >
             <option value="3D Spaces">3D Spaces</option>
             <option value="3D Avatar">3D Avatar</option>
             <option value="NFT's">NFTs</option>
@@ -67,7 +71,7 @@ const FourthPage = () => {
         </div>
         <div className="form-field">
           <label className="label" htmlFor="entry.553623353">
-            Phone No.
+            *Phone No.
           </label>
           <input
             type="text"
@@ -75,7 +79,18 @@ const FourthPage = () => {
             id="entry.553623353"
             name="entry.553623353"
           />
-        </div>{" "}
+        </div>
+        <div className="form-field">
+          <label className="label" htmlFor="entry.852140100">
+            *Twitter
+          </label>
+          <input
+            type="text"
+            className="cu-input"
+            id="entry.852140100"
+            name="entry.852140100"
+          />
+        </div>
         <div className="form-field">
           <label className="label" htmlFor="entry.1444762476">
             Discord
