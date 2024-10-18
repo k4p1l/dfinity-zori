@@ -23,6 +23,7 @@ import WebGLComponent from "./Pages/webglcomponent";
 import { defaultProviders } from "@connect2ic/core/providers";
 import { createClient } from "@connect2ic/core";
 import { Connect2ICProvider } from "@connect2ic/react";
+import ProfilePage from "./Pages/ProfilePage";
 
 function LandingPage() {
   return (
@@ -141,6 +142,14 @@ function App() {
             <NoNavbarLayout>
               <WebGLComponent />
             </NoNavbarLayout>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <MainLayout>
+              <ProfilePage />
+            </MainLayout>
           }
         />
       </Routes>

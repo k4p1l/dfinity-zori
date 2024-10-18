@@ -7,8 +7,11 @@ import { Tooltip } from "react-tooltip";
 
 const Navbar = () => {
   const { isConnected, disconnect } = useConnect();
+  //for sidebar in mobile
   const [isOpen, setIsOpen] = useState(false);
   const [avatarUrl, setAvatarUrl] = useState("");
+  // for dropdown menu
+  const [isOpenn, setIsOpenn] = useState(false);
   console.log(isConnected);
 
   useEffect(() => {
@@ -21,7 +24,15 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-  console.log(avatarUrl);
+
+  const handleMouseEnter = () => {
+    setIsOpenn(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpenn(false);
+  };
+
   return (
     <nav className="navbar">
       <div>
@@ -47,13 +58,22 @@ const Navbar = () => {
         </Link>
       </div>
       {isConnected ? (
-        <button className="get-started-wrapper" onClick={disconnect}>
-          <img src={avatarUrl} id="logout" alt="User Avatar" />
-          <Tooltip anchorSelect="#logout" place="bottom">
-            Logout
-          </Tooltip>
-          {/* <button className="logout">Logout</button> */}
-        </button>
+        <div
+          className="dropdown get-started-wrapper"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={avatarUrl} className="user-image" alt="User Avatar" />
+
+          <div className={`dropdown-content ${isOpenn ? "show" : ""}`}>
+            <a className="logout" href="/profile">
+              Profile
+            </a>
+            <button onClick={disconnect} className="logout">
+              Logout
+            </button>
+          </div>
+        </div>
       ) : (
         <Link className="get-started-wrapper" to="/getStarted">
           <button className="get-started">Get Started ✨</button>

@@ -2,7 +2,10 @@ import "./assets/css/Secondpage.css";
 import zori_land from "../public/images/spaces/zori land.png";
 import podcast from "../public/images/spaces/Podcast.jpg";
 import nature from "../public/images/spaces/Nature Space.jpg";
-import nft1 from "../public/images/nfts/1.jpg";
+import nft1 from "../public/images/nfts/Dress 03[1].png";
+import nft2 from "../public/images/nfts/B10[1].png";
+import nft3 from "../public/images/nfts/Dress 01[1].png";
+import nft4 from "../public/images/nfts/B3[1].png";
 import Tilt from "react-parallax-tilt";
 import dfinity from "./assets/dfinity logo 1.png";
 import icp from "./assets/download 1.png";
@@ -77,7 +80,7 @@ const SecondPage = () => {
           >
             <div className="card">
               <div className="card-container">
-                <img src={nft1} alt="" />
+                <img src={nft2} alt="" />
                 <p>Avatar 2</p>
                 <p>10 ICP</p>
               </div>
@@ -94,7 +97,7 @@ const SecondPage = () => {
           >
             <div className="card">
               <div className="card-container">
-                <img src={nft1} alt="" />
+                <img src={nft3} alt="" />
                 <p>Avatar 3</p>
                 <p>15.75 ICP</p>
               </div>
@@ -111,7 +114,7 @@ const SecondPage = () => {
           >
             <div className="card">
               <div className="card-container">
-                <img src={nft1} alt="" />
+                <img src={nft4} alt="" />
                 <p>Avatar 4</p>
                 <p>8.75 ICP</p>
               </div>

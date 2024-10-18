@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import nft1 from "../../public/images/nfts/1.jpg";
 import nft2 from "../../public/images/nfts/5.jpg";
 import nft3 from "../../public/images/nfts/4.jpg";
+import star from "../../public/images/star.gif";
 
 const Marketplace = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
