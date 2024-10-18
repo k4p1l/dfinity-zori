@@ -138,9 +138,9 @@ function App() {
         <Route
           path="/zori-avatar"
           element={
-            <MainLayout>
+            <NoNavbarLayout>
               <WebGLComponent />
-            </MainLayout>
+            </NoNavbarLayout>
           }
         />
       </Routes>

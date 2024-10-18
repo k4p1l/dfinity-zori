@@ -76,9 +76,11 @@ export default function AvatarDisplay() {
       }
       const logoX = (finalCanvas.width - logoWidth) / 2;
       const logoY = (finalCanvas.height - logoHeight) / 2;
+      context.globalAlpha = 0.5;
       context.drawImage(logoRef.current, logoX, logoY, logoWidth, logoHeight);
 
       // Draw the avatar image on top of the logo
+      context.globalAlpha = 1.0;
       context.drawImage(avatarImage, 0, 0);
 
       const finalURL = finalCanvas.toDataURL("image/png");

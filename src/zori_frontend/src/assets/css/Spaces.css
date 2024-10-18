@@ -1,0 +1,11 @@
+.spaces-wrapper h1 {
+  font-family: Hanson;
+  font-size: 3.8em;
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, rgb(206, 171, 255) 40%, #6b6eff 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}

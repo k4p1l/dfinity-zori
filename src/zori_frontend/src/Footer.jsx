@@ -39,16 +39,32 @@ const Footer = () => {
               </div>
               <div>
                 <h2>Follow Us</h2>
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/company/zori-live/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   LinkedIn<ion-icon name="arrow-forward-sharp"></ion-icon>
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.instagram.com/the.zori_/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Instagram<ion-icon name="arrow-forward-sharp"></ion-icon>
                 </a>
-                <a href="#">
+                <a
+                  href="https://x.com/Zori_Live"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Twitter<ion-icon name="arrow-forward-sharp"></ion-icon>
                 </a>
-                <a href="#">
+                <a
+                  href="https://t.me/ZoriLive"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Telegram<ion-icon name="arrow-forward-sharp"></ion-icon>
                 </a>
               </div>

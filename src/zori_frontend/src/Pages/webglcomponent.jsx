@@ -10,7 +10,7 @@ const WebGLComponent = () => {
     >
       <iframe
         title="WebGL Game"
-        src="src/zori_frontend/public/index.html"
+        src="/connectwebgl/index.html"
         style={{
           position: "absolute",
           top: 0,

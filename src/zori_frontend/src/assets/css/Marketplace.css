@@ -146,6 +146,7 @@
   display: flex;
   justify-content: flex-start;
   background-color: #e8f400;
+  background-color: rgb(255, 116, 243,0.6);
   overflow: hidden;
   translate: 0% 180%;
 }
@@ -155,7 +156,7 @@
   padding: 20px 0;
   font-size: 4rem;
   font-weight: bold;
-  color: #9661e1;
+  color: #fff;
   animation: marquee 5s linear infinite;
   transition: all 0.3s ease-in-out;
   font-family: medium;
