@@ -6,11 +6,11 @@ const AboutUs = () => {
     <div className="about-container">
       <div className="au-content">
         <div className="au-row1">
-          <div className="vid">
+          {/* <div className="vid">
             <video autoPlay muted loop>
               <source src={zorivid} type="video/mp4" />
             </video>
-          </div>
+          </div> */}
           <div className="au-col2">
             <h1>Mission</h1>
             <p>

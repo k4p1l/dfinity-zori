@@ -20,10 +20,11 @@
 
 .fp-main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: -20px;
   height: 100vh;
+  padding: 20px;
 }
 
 .bg-video {
@@ -40,11 +41,11 @@
 }
 
 .left-content {
-  text-align: center;
+  text-align: left;
 }
 
 .left-content h1 {
-  font-size: 48px;
+  font-size: 58px;
   font-family: power;
   text-transform: uppercase;
   letter-spacing: 2px;

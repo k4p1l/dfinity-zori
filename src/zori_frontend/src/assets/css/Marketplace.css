@@ -9,8 +9,10 @@
 }
 
 .marketplace-container {
+  height: 100vh;
   position: relative;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   margin: 80px auto;
   display: flex;
   flex-direction: column;
@@ -146,9 +148,9 @@
   display: flex;
   justify-content: flex-start;
   background-color: #e8f400;
-  background-color: rgb(255, 116, 243,0.6);
+  background-color: rgb(255, 116, 243, 0.6);
   overflow: hidden;
-  translate: 0% 180%;
+  translate: 0% -50%;
 }
 
 .marquee h1 {
@@ -176,4 +178,13 @@
 /* Hover effects */
 .marquee:hover h1 {
   animation-play-state: paused;
+}
+
+@media (max-width: 767px) {
+  .slider {
+    width: 300px;
+  }
+  .marquee {
+    translate: 0% -50%;
+  }
 }
