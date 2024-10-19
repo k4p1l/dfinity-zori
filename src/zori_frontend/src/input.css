@@ -14,7 +14,12 @@
 body {
   overflow-x: hidden;
   background-color: #2e177b;
-  background: url(./assets/purple.jpg) no-repeat right center fixed;
+  background-image: url(./assets/purple.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  background-attachment: fixed;
 }
 button {
   background-color: transparent;
