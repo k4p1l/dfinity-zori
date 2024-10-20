@@ -191,24 +191,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-top: 0px; */
+    margin-top: 20px;
   }
-  .left-content {
-    margin-left: 10px;
-  }
-  .left-content > h2 {
-    font-size: 30px;
+  .left-content h1 {
+    font-size: 40px;
   }
 
   .left-content .metaverse,
   .extraordinary {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .right-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     margin-right: 0px;
   }
@@ -233,7 +230,7 @@
   }
 
   .frosted-glass {
-    /* display: none; */
+    display: none;
     width: 240px;
     bottom: 18vh;
     right: 5vw;
