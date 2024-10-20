@@ -15,7 +15,9 @@ const FirstPage = () => {
 
         <div className="left-content">
           <h1>
-            world’s first gamified <br /> Web3 launchpad
+            world<span className="inverted-comma">'</span>s first{" "}
+            <span className="extraordinary">gamified</span> <br /> Web3{" "}
+            <span className="extraordinary">launchpad </span>
           </h1>
         </div>
 

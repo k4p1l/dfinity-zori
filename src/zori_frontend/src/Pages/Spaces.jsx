@@ -6,7 +6,7 @@ import "../assets/css/Spaces.css";
 const Spaces = () => {
   return (
     <div>
-      <div className="mt-24 spaces-wrapper">
+      <div className="spaces-wrapper">
         <h1>3D SPACES</h1>
         <div className="spaces">
           <div className="space">

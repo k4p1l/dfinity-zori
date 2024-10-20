@@ -8,7 +8,7 @@ const isLocalEnv = process.env.DFX_NETWORK === 'local';
 const createActor = async () => {
   // Create an HttpAgent with the correct host
   const agent = new HttpAgent({
-    host: isLocalEnv ? "http://localhost:44119" : "https://icp0.io",  // Adjust to your replica host
+    host: isLocalEnv ? "http://localhost:34391" : "https://icp0.io",  // Adjust to your replica host
   });
 
   // Fetch the root key only in local environments

@@ -77,8 +77,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: consolas;
   font-size: 1.2em;
 }
 
@@ -126,6 +125,7 @@
 .footer-content a {
   text-decoration: none;
   font-family: Inter;
+  font-weight: 600;
   color: #8153c7;
   font-size: 1.25em;
   transition: all 0.3s ease;
@@ -167,6 +167,7 @@
   .row2 p {
     font-size: 1em;
     text-wrap: pretty;
+    padding: 6px;
     padding-bottom: 10px;
   }
 

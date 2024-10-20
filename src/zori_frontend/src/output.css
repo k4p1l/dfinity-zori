@@ -621,12 +621,12 @@ video {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricPrecision;
 }
-
+/* 
 body {
   overflow-x: hidden;
   background-color: #2e177b;
   background: url(./assets/purple.jpg) no-repeat right center fixed;
-}
+} */
 
 button {
   background-color: transparent;

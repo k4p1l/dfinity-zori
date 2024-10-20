@@ -13,8 +13,13 @@
 
 body {
   overflow-x: hidden;
-  background-color: #2e177b;
-  background: url(./assets/purple.jpg) no-repeat right center fixed;
+  /* background: url(./assets/purple.webp) no-repeat right center fixed; */
+  background: linear-gradient(
+      180deg,
+      rgb(129, 60, 172) 0%,
+      rgb(21.34, 18.05, 45.9) 85%
+    )
+    no-repeat right center fixed;
 }
 button {
   background-color: transparent;

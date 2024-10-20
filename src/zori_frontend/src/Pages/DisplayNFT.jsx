@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import "../assets/css/DisplayNFT.css";
+import Tilt from "react-parallax-tilt";
 
 const DisplayNFT = () => {
   const location = useLocation();
@@ -11,9 +13,27 @@ const DisplayNFT = () => {
   }
 
   return (
-    <div>
+    <div className="display-nft-container">
       <h1>Minted NFT Details</h1>
-      <p>
+      <table>
+        <tr>
+          <th>NFT Name:</th>
+          <td> {nftName}</td>
+        </tr>
+        <tr>
+          <th>Description:</th>
+          <td> {description}</td>
+        </tr>
+        <tr>
+          <th>Price:</th>
+          <td> {price} ICP</td>
+        </tr>
+        <tr>
+          <th>Minted NFT Principal:</th>
+          <td> {mintedNFTPrincipal}</td>
+        </tr>
+      </table>
+      {/* <p>
         <strong>NFT Name:</strong> {nftName}
       </p>
       <p>
@@ -24,11 +44,26 @@ const DisplayNFT = () => {
       </p>
       <p>
         <strong>Minted NFT Principal:</strong> {mintedNFTPrincipal}
-      </p>
+      </p> */}
 
       {/* Display the minted image */}
-      <h2>Minted NFT Image:</h2>
-      <img src={`data:image/png;base64,${base64Image}`} alt="Minted NFT" />
+
+      <div className="minted-img-wrapper">
+        <Tilt
+          glareEnable={true}
+          glareMaxOpacity={0.36}
+          glareColor="#f0e4ff"
+          glarePosition="all"
+          glareBorderRadius="12px"
+          scale="1.02"
+          transitionSpeed="2000"
+          tiltMaxAngleX="10"
+          tiltMaxAngleY="10"
+          tiltReverse={true}
+        >
+          <img src={`data:image/png;base64,${base64Image}`} alt="Minted NFT" />
+        </Tilt>
+      </div>
     </div>
   );
 };

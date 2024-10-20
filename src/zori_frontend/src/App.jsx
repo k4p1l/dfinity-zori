@@ -28,7 +28,6 @@ import ProfilePage from "./Pages/ProfilePage";
 function LandingPage() {
   return (
     <>
-      
       <FirstPage />
       <SecondPage />
       <ThirdPage />

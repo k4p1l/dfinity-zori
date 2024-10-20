@@ -1,3 +1,11 @@
+.spaces-wrapper {
+  background: url(../../assets/purple.webp) no-repeat right bottom fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 6em;
+}
+
 .spaces-wrapper h1 {
   font-family: Hanson;
   font-size: 3.8em;

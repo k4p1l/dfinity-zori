@@ -54,6 +54,7 @@
 
 .label {
   font-family: Inter;
+  font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: -0.4px;
   color: #cccdff;

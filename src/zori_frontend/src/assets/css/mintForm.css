@@ -110,19 +110,29 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   /* padding: 20px; */
   z-index: 2;
   height: 150%;
   width: 100vw;
-  font-family: neue montreal;
+  font-family: monospace;
   font-weight: bold;
 }
+.confirmation-modal h2 {
+  font-size: 1.5em;
+}
 
-.confirmation-modal p {
-  font-weight: normal;
+.confirmation-modal table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.confirmation-modal th {
+  font-size: 1.25em;
+  text-align: left;
+  padding: 0.2em 0.75em;
 }
 
 .confirmation-modal-wrapper {
@@ -152,7 +162,7 @@
   display: flex;
   gap: 40px;
   font-family: aesthetic;
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
 
 .confirmation-buttons button {
@@ -162,4 +172,38 @@
 
 .confirmation-buttons button:hover {
   border-bottom: 2px solid rgba(55, 9, 51, 1);
+}
+
+@media (max-width: 767px) {
+  .mint-form {
+    margin-top: 140px;
+    max-width: 90vw;
+  }
+  .mint-form h1 {
+    font-size: 2.8em;
+  }
+  .mint-form .field-wrapper label {
+    font-size: 1em;
+  }
+  .mint-form .field-wrapper input,
+  .mint-form .field-wrapper textarea {
+    font-size: 0.85em;
+  }
+  .confirmation-modal {
+    top: 30%;
+  }
+  .confirmation-modal h2 {
+    font-size: 1.2em;
+  }
+  .confirmation-modal th {
+    font-size: 1.2em;
+  }
+  .confirmation-modal-wrapper {
+    width: 90vw;
+    background: linear-gradient(
+      330deg,
+      rgb(206, 171, 255) 0%,
+      rgb(255, 255, 255) 40%
+    );
+  }
 }

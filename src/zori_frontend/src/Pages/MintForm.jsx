@@ -150,7 +150,7 @@ const MintForm = () => {
 
       <div>
         {isLoading ? (
-          <p>Minting in progress...</p>
+          ""
         ) : (
           <button
             className="mint-button"
@@ -176,9 +176,23 @@ const MintForm = () => {
             <h2>
               Are you sure you want to mint this NFT with the following details?
             </h2>
-            <p>Name: {nftName}</p>
+            <table>
+              <tr>
+                <th>NFT Name</th>
+                <th>{nftName}</th>
+              </tr>
+              <tr>
+                <th>NFT Description</th>
+                <th>{description}</th>
+              </tr>
+              <tr>
+                <th>NFT Price</th>
+                <th>{price}</th>
+              </tr>
+            </table>
+            {/* <p>Name: {nftName}</p>
             <p>Description: {description}</p>
-            <p>Price: {price}</p>
+            <p>Price: {price}</p> */}
             {imagePreview && (
               <img
                 src={imagePreview}
@@ -192,6 +206,16 @@ const MintForm = () => {
               </button>
               <button onClick={handleMint}>CONFIRM </button>
             </div>
+            <div>{isLoading ? <p>Minting in progress...</p> : ""}</div>
+            {mintSuccess === true && (
+              <div>
+                <p>Successfully minted NFT!</p>
+                <button onClick={shareOnTwitter}>Share on Twitter</button>
+              </div>
+            )}
+            {mintSuccess === false && (
+              <p>Failed to mint NFT. Please try again.</p>
+            )}
           </div>
         </div>
       )}

@@ -24,11 +24,15 @@
 }
 
 .avatar-container {
-  margin-top: 4em;
   padding: 4em;
+  padding-top: 8em;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background: url(../../assets/purple.webp) no-repeat right bottom fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .avatar-col1 {

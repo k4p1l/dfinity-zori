@@ -47,12 +47,12 @@
   z-index: -1;
   top: 0;
   opacity: 1;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(50px);
-  background: rgba(0, 0, 0, 0.1);
+  background: rgb(21.34, 18.05, 45.9, 0.1);
   mask-image: linear-gradient(
     rgb(0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.8) 85%,
+    rgba(0, 0, 0, 0.8) 75%,
     rgba(0, 0, 0, 0) 100%
   );
 
@@ -114,7 +114,6 @@
     background-position: 0% 50%; /* End position */
   }
 }
-
 
 /* Phones and small devices */
 @media (max-width: 767px) {
