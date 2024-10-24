@@ -9,9 +9,9 @@ const FirstPage = () => {
   return (
     <>
       <main className="fp-main">
-        {/* <video className="bg-video" autoPlay muted loop>
+        <video className="bg-video" autoPlay muted loop>
           <source src={bgvid} type="video/mp4" />
-        </video> */}
+        </video>
 
         <div className="left-content">
           <h1>
@@ -21,7 +21,7 @@ const FirstPage = () => {
           </h1>
         </div>
 
-        <div className="right-content">
+        {/* <div className="right-content">
           <img src={avatar} alt="" />
           <div className="stats">
             <div>
@@ -46,7 +46,7 @@ const FirstPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );
