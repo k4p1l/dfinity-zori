@@ -1,13 +1,14 @@
 import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "../assets/css/Marketplace.css";
 import { Link } from "react-router-dom";
 import nft1 from "../../public/images/nfts/1.jpg";
 import nft2 from "../../public/images/nfts/5.jpg";
 import nft3 from "../../public/images/nfts/4.jpg";
-import star from "../../public/images/star.gif";
 import Tilt from "react-parallax-tilt";
+import Footer from "../Footer";
 
-const Marketplace = () => {
+const Marketplace = ({ categories }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("Avatars");
   const secondpageRef = useRef(null);
@@ -40,29 +41,16 @@ const Marketplace = () => {
     },
   ];
 
-  const categories = {
-    Avatars: [
-      { id: 1, imageUrl: nft1, title: "Avatar 1", price: "2 ICP" },
-      { id: 2, imageUrl: nft2, title: "Avatar 2", price: "3 ICP" },
-      { id: 3, imageUrl: nft1, title: "Avatar 3", price: "2 ICP" },
-    ],
-    Land: [
-      { id: 1, imageUrl: nft3, title: "Land 1", price: "5 ICP" },
-      { id: 2, imageUrl: nft1, title: "Land 2", price: "8 ICP" },
-      { id: 3, imageUrl: nft3, title: "Land 3", price: "5 ICP" },
-    ],
-    Wearables: [
-      { id: 1, imageUrl: nft2, title: "Wearable 1", price: "1 ICP" },
-      { id: 2, imageUrl: nft3, title: "Wearable 2", price: "1.5 ICP" },
-      { id: 3, imageUrl: nft2, title: "Wearable 3", price: "1 ICP" },
-    ],
-  };
-
   const scrollToMarketplace = () => {
     // Scroll to the marketplace-nfts div
     if (secondpageRef.current) {
       secondpageRef.current.scrollIntoView({ behavior: "smooth" });
     }
+  };
+  const navigate = useNavigate();
+
+  const handleViewMoreClick = () => {
+    navigate(`/category/${selectedCategory}`);
   };
 
   return (
@@ -180,6 +168,10 @@ const Marketplace = () => {
               </div>
             ))}
           </div>
+
+          <button className="view-more-button" onClick={handleViewMoreClick}>
+            View More <ion-icon name="add-circle-sharp"></ion-icon>
+          </button>
         </div>
       </div>
 
@@ -194,6 +186,8 @@ const Marketplace = () => {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

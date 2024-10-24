@@ -15,7 +15,6 @@
   width: 100vw;
   overflow: hidden;
   margin: 0px auto;
-  padding-bottom: 40px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -230,6 +229,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
+  perspective: 1000px;
 }
 
 .sp-nft-image-wrapper {
@@ -251,6 +251,7 @@
   width: 300px;
   padding: 10px;
   padding-bottom: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sp-nft-card::before {
@@ -294,18 +295,36 @@
 }
 
 .card-middle {
-  transform: scale(1.1);
+  transform: scale(1);
   z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.card-middle:hover {
+  transform: scale(1.15);
+  z-index: 3;
 }
 
 .card-left {
-  transform: scale(0.9) translateX(-10px);
+  transform: scale(0.9) translateX(-10px) rotateY(-10deg);
   z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.card-left:hover {
+  transform: scale(1.15) translateX(80px);
+  z-index: 3;
 }
 
 .card-right {
-  transform: scale(0.9) translateX(10px);
+  transform: scale(0.9) translateX(10px) rotateY(10deg);
   z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.card-right:hover {
+  transform: scale(1.15) translateX(-80px);
+  z-index: 3;
 }
 
 .mint-button {
@@ -325,26 +344,120 @@
   justify-content: center;
 }
 
+.view-more-button {
+  color: #e5d2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.view-more-button ion-icon {
+  padding-top: 2px;
+}
+
 @media (max-width: 767px) {
-  .slider {
-    width: 300px;
+  .mp-first-page {
+    /* margin-top: 20px; */
+    flex-direction: column-reverse;
+    gap: 20px;
   }
-  .marketplace-container h1 {
-    font-size: 2.8em;
-    margin-top: 80px;
+  .marketplace-hero-text {
+    padding-left: 20px;
+    align-items: center;
+  }
+  .marketplace-hero-text h1 {
+    font-size: 2.2em;
     margin-bottom: 0px;
   }
-  .slider-button {
-    top: 35%;
-  }
-  .slider-button.prev {
-    left: 5px;
+
+  .marketplace-hero-text p {
+    text-align: center;
   }
 
-  .slider-button.next {
-    right: 5px;
+  .marketplace-nfts {
+    margin-bottom: -100px;
+    margin-top: 20px;
   }
-  .marquee {
-    translate: 0% -50%;
+
+  .stacked-nft-cards {
+    width: 240px;
+    height: 300px;
+    margin-bottom: 80px;
+  }
+
+  .nft-card {
+    width: 200px;
+    height: 250px;
+  }
+
+  .nft-card-image {
+    height: 180px;
+  }
+
+  .stacked-card-0 {
+    top: 0;
+    left: 0;
+  }
+
+  .stacked-card-1 {
+    top: 0px;
+    left: 80px;
+    scale: 0.8;
+  }
+
+  .stacked-card-2 {
+    top: 0px;
+    left: 160px;
+    scale: 0.6;
+  }
+
+  .mp-btns {
+    flex-direction: column;
+  }
+
+  .marketplace-content {
+    padding: 10px 20px;
+  }
+
+  .sp-nft-cards {
+    flex-direction: column;
+    gap: 20px;
+    perspective: 1000px;
+  }
+
+  .card-middle {
+    transform: scale(1);
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+
+  .card-middle:hover {
+    transform: scale(1.15);
+    z-index: 3;
+  }
+
+  .card-left {
+    transform: scale(0.9);
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .card-left:hover {
+    transform: scale(1.15);
+    z-index: 3;
+  }
+
+  .card-right {
+    transform: scale(0.9);
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .card-right:hover {
+    transform: scale(1.15);
+    z-index: 3;
   }
 }

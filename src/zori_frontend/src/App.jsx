@@ -20,6 +20,11 @@ import MintForm from "./Pages/MintForm";
 import DisplayNFT from "./Pages/DisplayNFT";
 import WebGLComponent from "./Pages/webglcomponent";
 import CustomCursor from "./CustomCursor";
+import ViewAllNFTs from "./Pages/ViewAllNFTs";
+
+import nft1 from "../public/images/nfts/1.jpg";
+import nft2 from "../public/images/nfts/5.jpg";
+import nft3 from "../public/images/nfts/4.jpg";
 
 import { defaultProviders } from "@connect2ic/core/providers";
 import { createClient } from "@connect2ic/core";
@@ -53,6 +58,48 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
 
+  const categories = {
+    Avatars: [
+      { id: 1, imageUrl: nft1, title: "Avatar 1", price: "2", currency: "ICP" },
+      { id: 2, imageUrl: nft2, title: "Avatar 2", price: "3", currency: "ICP" },
+      {
+        id: 3,
+        imageUrl: nft1,
+        title: "Avatar 3",
+        price: "2.5",
+        currency: "ICP",
+      },
+    ],
+    Land: [
+      { id: 1, imageUrl: nft3, title: "Land 1", price: "5", currency: "ICP" },
+      { id: 2, imageUrl: nft1, title: "Land 2", price: "8", currency: "ICP" },
+      { id: 3, imageUrl: nft3, title: "Land 3", price: "5", currency: "ICP" },
+    ],
+    Wearables: [
+      {
+        id: 1,
+        imageUrl: nft2,
+        title: "Wearable 1",
+        price: "1",
+        currency: "ICP",
+      },
+      {
+        id: 2,
+        imageUrl: nft3,
+        title: "Wearable 2",
+        price: "1.5",
+        currency: "ICP",
+      },
+      {
+        id: 3,
+        imageUrl: nft2,
+        title: "Wearable 3",
+        price: "1",
+        currency: "ICP",
+      },
+    ],
+  };
+
   return (
     <>
       <CustomCursor />
@@ -79,7 +126,7 @@ function App() {
             path="/marketplace"
             element={
               <MainLayout>
-                <Marketplace />
+                <Marketplace categories={categories} />
               </MainLayout>
             }
           />
@@ -152,6 +199,14 @@ function App() {
             element={
               <MainLayout>
                 <ProfilePage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/category/:category"
+            element={
+              <MainLayout>
+                <ViewAllNFTs categories={categories} />
               </MainLayout>
             }
           />
