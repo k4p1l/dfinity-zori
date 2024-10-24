@@ -13,7 +13,7 @@ import Avatar from "./Pages/Avatar";
 import Spaces from "./Pages/Spaces";
 import AvatarCreatorComponent from "./Pages/AvatarCreation";
 import AvatarDisplay from "./Pages/AvatarDisplay";
-import GetStarted from "./Pages/GetStarted";
+import JoinWaitlist from "./Pages/GetStarted";
 import MainLayout from "./Layouts/MainLayout";
 import NoNavbarLayout from "./Layouts/NoNavbarLayout";
 import MintForm from "./Pages/MintForm";
@@ -21,6 +21,7 @@ import DisplayNFT from "./Pages/DisplayNFT";
 import WebGLComponent from "./Pages/webglcomponent";
 import CustomCursor from "./CustomCursor";
 import ViewAllNFTs from "./Pages/ViewAllNFTs";
+import Login from "./Pages/Login";
 
 import nft1 from "../public/images/nfts/1.jpg";
 import nft2 from "../public/images/nfts/5.jpg";
@@ -166,7 +167,15 @@ function App() {
             path="/getStarted"
             element={
               <MainLayout>
-                <GetStarted />
+                <JoinWaitlist />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <MainLayout>
+                <Login />
               </MainLayout>
             }
           />
