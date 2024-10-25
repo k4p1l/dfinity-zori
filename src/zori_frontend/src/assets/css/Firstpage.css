@@ -21,7 +21,7 @@
 .fp-main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-top: 40px;
   height: 100vh;
@@ -54,7 +54,7 @@
   color: #eae0ff;
   mix-blend-mode: normal;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .inverted-comma {
