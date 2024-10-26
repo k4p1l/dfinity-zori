@@ -18,6 +18,11 @@
   src: url(../../../public/fonts/EBGaramond-Italic-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: medium;
+  src: url(../../../public/fonts/Medium.otf);
+}
+
 .fp-main {
   display: flex;
   flex-direction: column;
