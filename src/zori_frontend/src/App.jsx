@@ -22,6 +22,7 @@ import WebGLComponent from "./Pages/webglcomponent";
 import CustomCursor from "./CustomCursor";
 import ViewAllNFTs from "./Pages/ViewAllNFTs";
 import Login from "./Pages/Login";
+import ViewNFT from "./Pages/viewNFT";
 
 import nft1 from "../public/images/nfts/1.jpg";
 import nft2 from "../public/images/nfts/5.jpg";
@@ -216,6 +217,14 @@ function App() {
             element={
               <MainLayout>
                 <ViewAllNFTs categories={categories} />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/category/:category/:nftId"
+            element={
+              <MainLayout>
+                <ViewNFT categories={categories} />
               </MainLayout>
             }
           />

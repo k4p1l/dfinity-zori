@@ -32,6 +32,12 @@
   border: 2.5px solid rgb(55, 67, 103);
   border-radius: 20px;
   padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.van-nft-card:hover {
+  transform: scale(1.05);
+  border: 2.5px solid rgb(135, 156, 219);
 }
 
 .van-nft-image-wrapper {
@@ -62,7 +68,7 @@
 
 .van-text-overlay h3,
 .van-text-overlay p {
-  color: rgb(153, 172, 228);
+  color: rgb(173, 194, 255);
   font-family: Inter;
   font-weight: 500;
   font-size: 0.9em;

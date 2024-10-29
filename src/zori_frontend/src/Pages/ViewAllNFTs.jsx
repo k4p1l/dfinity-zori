@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../assets/css/ViewAllNFTs.css";
+import { Link } from "react-router-dom";
 
 const ViewAllNFTs = ({ categories }) => {
   const { category } = useParams();
@@ -20,8 +21,6 @@ const ViewAllNFTs = ({ categories }) => {
   const filteredNFTs = sortedNFTs.filter((nft) =>
     nft.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
-  
 
   return (
     <div className="category-nft-page">
@@ -45,8 +44,6 @@ const ViewAllNFTs = ({ categories }) => {
           <ion-icon name="search-sharp"></ion-icon>
         </div>
 
-        
-
         {/* Sort Buttons */}
         <div className="sort-dropdown">
           <select
@@ -63,7 +60,11 @@ const ViewAllNFTs = ({ categories }) => {
       <div className="van-nft-cards">
         {filteredNFTs.length > 0 ? (
           filteredNFTs.map((nft) => (
-            <div key={nft.id} className="van-nft-card">
+            <Link
+              key={nft.id}
+              to={`/category/${category}/${nft.id}`}
+              className="van-nft-card"
+            >
               <div className="van-nft-image-wrapper">
                 <img
                   src={nft.imageUrl}
@@ -77,7 +78,7 @@ const ViewAllNFTs = ({ categories }) => {
                   {nft.price} {nft.currency}
                 </p>
               </div>
-            </div>
+            </Link>
           ))
         ) : (
           <p>No NFTs found matching "{searchQuery}"</p>

@@ -62,9 +62,11 @@
   margin-top: 20%;
 }
 .left-content p {
+  font-family: inter;
+  font-weight: 500;
   color: white;
   text-align: center;
-  font-size: 1.125em;
+  font-size: 0.85em;
 }
 .inverted-comma {
   font-family: helvetica;
