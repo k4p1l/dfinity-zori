@@ -93,12 +93,93 @@
   backdrop-filter: blur(10px);
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 200;
+  transition: all 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.left {
+  left: 5%;
+}
+
+.carousel-button.right {
+  right: 5%;
+}
+
 @media (max-width: 767px) {
   .third-page h1 {
     font-size: 2.5em;
     margin-top: 100px;
   }
-  .members {
-    flex-wrap: wrap;
+
+  .member {
+    width: 105px;
+    height: 150px;
+    overflow: hidden;
+    padding: 3px;
+  }
+  /* .carousel {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  } */
+
+  .info-wrapper {
+    padding: 2px;
+  }
+  .info-wrapper h2 {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  .info-wrapper p {
+    font-size: 0.6rem;
+  }
+  .carousel-button {
+    font-size: 1.2rem;
+  }
+
+  .carousel-container {
+    padding: 0pa 4px;
+    margin: 40px auto;
+  }
+  .carousel {
+    gap: 0.5rem;
+  }
+  .carousel-button.left {
+    left: 1%;
+  }
+
+  .carousel-button.right {
+    right: 1%;
   }
 }

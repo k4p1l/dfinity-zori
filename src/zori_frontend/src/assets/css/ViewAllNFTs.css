@@ -1,5 +1,8 @@
 .category-nft-page {
-  padding: 80px 40px 0px 40px;
+  padding: 120px 40px 0px 40px;
+  background: url(../../assets/purple.webp) no-repeat right bottom fixed;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .category-nft-page h2 {
@@ -154,6 +157,9 @@
 }
 
 @media (max-width: 767px) {
+  .category-nft-page {
+    padding: 120px 15px 0px 15px;
+  }
   .van-nft-card {
     width: 160px;
     height: fit-content;

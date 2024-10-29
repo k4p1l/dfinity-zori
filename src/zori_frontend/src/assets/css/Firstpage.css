@@ -59,9 +59,13 @@
   color: #eae0ff;
   mix-blend-mode: normal;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20%;
 }
-
+.left-content p {
+  color: white;
+  text-align: center;
+  font-size: 1.125em;
+}
 .inverted-comma {
   font-family: helvetica;
 }
@@ -254,8 +258,8 @@
     justify-content: center;
   }
 
-  .images img {
-    width: 22%;
+  .images {
+    padding: 10px;
   }
   .frosted-glass span {
     font-size: 8px;

@@ -1,9 +1,6 @@
 import bgvid from "./assets/zori.mp4";
 import "./assets/css/Firstpage.css";
-import avatar from "./assets/avatar.svg";
-import dfinity from "./assets/dfinity logo 1.png";
-import icp from "./assets/download 1.png";
-import icp_in from "./assets/icp in 1.png";
+import SlideInSection from "./Components/SlideIn";
 
 const FirstPage = () => {
   return (
@@ -12,14 +9,20 @@ const FirstPage = () => {
         <video className="bg-video" autoPlay muted loop>
           <source src={bgvid} type="video/mp4" />
         </video>
-
-        <div className="left-content">
-          <h1>
-            world<span className="inverted-comma">'</span>s first{" "}
-            <span className="extraordinary">gamified</span> <br /> Web3{" "}
-            <span className="extraordinary">launchpad </span>
-          </h1>
-        </div>
+        <SlideInSection>
+          <div className="left-content">
+            <h1>
+              world<span className="inverted-comma">'</span>s first{" "}
+              <span className="extraordinary">gamified </span> <br /> Web3{" "}
+              <span className="extraordinary">launchpad </span>
+            </h1>
+            <p>
+              Elevate your experience: The Zori, your gateway to NFTs, <br />
+              the gamified metaverse, AI Avatars, and customized avatars with
+              unique styles !
+            </p>
+          </div>
+        </SlideInSection>
 
         {/* <div className="right-content">
           <img src={avatar} alt="" />

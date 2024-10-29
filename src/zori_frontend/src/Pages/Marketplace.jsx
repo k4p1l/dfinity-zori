@@ -7,6 +7,8 @@ import nft2 from "../../public/images/nfts/5.jpg";
 import nft3 from "../../public/images/nfts/4.jpg";
 import Tilt from "react-parallax-tilt";
 import Footer from "../Footer";
+import SlideInSection from "../Components/SlideIn";
+import PopOutSection from "../Components/Popout";
 
 const Marketplace = ({ categories }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -57,22 +59,31 @@ const Marketplace = ({ categories }) => {
     <div className="marketplace-container">
       <div className="mp-first-page">
         <div className="marketplace-hero-text">
-          <div>
-            <h1>Create NFTs</h1>
-          </div>
+          <SlideInSection>
+            <div>
+              <h1>Create NFTs</h1>
+            </div>
+          </SlideInSection>
 
-          <h1>Artwork and Sell</h1>
-          <p>
-            Explore exclusive art, collectibles, and assets backed by blockchain
-            technology. <br />
-            Start minting, trading, and building your collection on the future
-            of the Internet—powered by the ICP blockchain.
-          </p>
-          <div className="mp-btns">
-            <button onClick={scrollToMarketplace} className="mint-button">
-              Explore Now ✨
-            </button>
-          </div>
+          <SlideInSection>
+            <h1>Artwork and Sell</h1>
+          </SlideInSection>
+          <SlideInSection>
+            <p>
+              Explore exclusive art, collectibles, and assets backed by
+              blockchain technology. <br />
+              Start minting, trading, and building your collection on the future
+              of the Internet—powered by the ICP blockchain.
+            </p>
+          </SlideInSection>
+
+          <SlideInSection>
+            <div className="mp-btns">
+              <button onClick={scrollToMarketplace} className="mint-button">
+                Explore Now ✨
+              </button>
+            </div>
+          </SlideInSection>
         </div>
 
         <div className="marketplace-nfts">
@@ -169,9 +180,34 @@ const Marketplace = ({ categories }) => {
             ))}
           </div>
 
-          <button className="view-more-button" onClick={handleViewMoreClick}>
+          {/* <button className="view-more-button" onClick={handleViewMoreClick}>
             View More <ion-icon name="add-circle-sharp"></ion-icon>
-          </button>
+          </button> */}
+          <section class="grid place-content-center py-6">
+            <button
+              class="group flex h-10 items-center gap-2 rounded-full bg-[#ceabff] pl-3 pr-4 transition-all duration-300 ease-in-out hover:bg-black hover:pl-2 hover:text-white active:bg-neutral-700"
+              onClick={handleViewMoreClick}
+            >
+              <span class="rounded-full bg-black p-1 text-sm transition-colors duration-300 group-hover:bg-white">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="-translate-x-[200%] text-[0px] transition-all duration-300 group-hover:translate-x-0 group-hover:text-lg group-hover:text-black group-active:-rotate-45"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+              <span>View More</span>
+            </button>
+          </section>
         </div>
       </div>
 

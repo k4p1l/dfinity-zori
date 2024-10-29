@@ -38,7 +38,7 @@ function LandingPage() {
       <FirstPage />
       <SecondPage />
       <ThirdPage />
-      <FourthPage />
+      {/* <FourthPage /> */}
       <Footer />
     </>
   );

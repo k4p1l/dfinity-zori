@@ -34,61 +34,60 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div>
-        <Link to="/">
-          <img className="logo" src={logo} alt="Zori" />
-        </Link>
-      </div>
-      <div className={`links ${isOpen ? "open" : ""}`}>
-        <Link to="/" onClick={toggleSidebar}>
-          Home
-        </Link>
-        <Link to="/about" onClick={toggleSidebar}>
-          About Us
-        </Link>
-        <Link to="/marketplace" onClick={toggleSidebar}>
-          NFT Marketplace
-        </Link>
-        <Link to="/avatar" onClick={toggleSidebar}>
-          3D Avatar
-        </Link>
-        <Link to="/spaces" onClick={toggleSidebar}>
-          3D Spaces
-        </Link>
-      </div>
-      {isConnected ? (
-        <div
-          className="dropdown get-started-wrapper"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={avatarUrl} className="user-image" alt="User Avatar" />
-
-          <div className={`dropdown-content ${isOpenn ? "show" : ""}`}>
-            <a className="logout" href="/profile">
-              Profile
-            </a>
-            <button onClick={disconnect} className="logout">
-              Logout
-            </button>
-          </div>
+    <nav>
+      <div className="navbar">
+        <div>
+          <Link to="/">
+            <img className="logo" src={logo} alt="Zori" />
+          </Link>
         </div>
-      ) : (
-        <Link className="get-started-wrapper" to="/getStarted">
-          <button className="get-started">Get Started ✨</button>
-        </Link>
-      )}
-      <div className="backdrop"></div>
+        <div className={`links ${isOpen ? "open" : ""}`}>
+          <Link to="/" onClick={toggleSidebar}>
+            Home
+          </Link>
+          <Link to="/about" onClick={toggleSidebar}>
+            About Us
+          </Link>
+          <Link to="/marketplace" onClick={toggleSidebar}>
+            NFT Marketplace
+          </Link>
+          <Link to="/avatar" onClick={toggleSidebar}>
+            3D Avatar
+          </Link>
+          <Link to="/spaces" onClick={toggleSidebar}>
+            3D Spaces
+          </Link>
+        </div>
+        {isConnected ? (
+          <div
+            className="dropdown get-started-wrapper"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <img src={avatarUrl} className="user-image" alt="User Avatar" />
 
-      {/* Hamburger menu for smaller screens */}
-      <div
-        className={`hamburger ${isOpen ? "open" : ""}`}
-        onClick={toggleSidebar}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+            <div className={`dropdown-content ${isOpenn ? "show" : ""}`}>
+              <a className="logout" href="/profile">
+                Profile
+              </a>
+              <button onClick={disconnect} className="logout">
+                Logout
+              </button>
+            </div>
+          </div>
+        ) : (
+          <Link className="get-started-wrapper" to="/getStarted">
+            <button className="get-started">Get Started ✨</button>
+          </Link>
+        )}
+        <div
+          className={`hamburger ${isOpen ? "open" : ""}`}
+          onClick={toggleSidebar}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   );
