@@ -1,13 +1,28 @@
 .nft-details-page {
   height: 100%;
-  min-height: 100vh;
   display: flex;
-  align-items: flex-start;
-  padding-top: 150px;
+  align-items: center;
   justify-content: center;
+  min-height: 100vh;
   color: white;
   background: url(../../assets/purple.webp) no-repeat right bottom fixed;
   background-size: cover;
+}
+
+.nft-details-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(
+    -40deg,
+    rgba(255, 41, 248, 0.3) 0%,
+    rgba(16, 16, 16, 0.5) 30%
+  );
+  backdrop-filter: blur(20px);
+  width: fit-content;
+  border-radius: 16px;
+  border-bottom: 4px solid #c753bd;
+  box-shadow: 0 5px 15px #c753bd;
 }
 
 .nft-info {
@@ -17,16 +32,16 @@
   align-items: flex-start;
   gap: 10px;
   justify-content: center;
-  margin-left: 40px;
+  padding: 10px 40px;
 }
 
 .nft-details {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   width: 330px;
   height: 390px;
+  padding: 10px;
 }
 
 .nft-info h2 {
