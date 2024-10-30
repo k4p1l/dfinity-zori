@@ -6,7 +6,7 @@ const FirstPage = () => {
   return (
     <>
       <main className="fp-main">
-        <video className="bg-video" autoPlay muted loop>
+        <video className="bg-video" autoPlay muted loop playsInline>
           <source src={bgvid} type="video/mp4" />
         </video>
         <SlideInSection>

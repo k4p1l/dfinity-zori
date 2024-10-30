@@ -170,9 +170,14 @@
 }
 
 @media (max-width: 767px) {
+  .second-page > div {
+    margin-top: 20px;
+  }
+
   .second-page h1 {
     font-size: 2.5em;
   }
+
   .spaces {
     display: flex;
     flex-direction: column;
