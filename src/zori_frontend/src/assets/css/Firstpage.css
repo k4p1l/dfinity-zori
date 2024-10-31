@@ -172,7 +172,7 @@
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
     90deg,
-    rgb(206, 171, 255) 0%,
+    #ceabff 0%,
     rgb(155, 157, 255) 100%
   );
   background-clip: text;

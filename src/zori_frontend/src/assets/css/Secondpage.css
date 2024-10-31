@@ -135,9 +135,9 @@
   z-index: -1;
   background: linear-gradient(
     -30deg,
-    rgba(231, 14, 255, 0.6),
-    rgba(169, 144, 0, 0.2),
-    rgba(98, 0, 255, 0.4)
+    rgba(225, 125, 236, 0.5),
+    rgba(255, 217, 0, 0.6),
+    rgba(81, 73, 234, 0.4)
   );
   border-radius: 16px;
 }

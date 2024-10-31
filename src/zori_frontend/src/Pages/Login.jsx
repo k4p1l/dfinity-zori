@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../assets/css/GetStarted.css";
 import {
   ConnectButton,
@@ -15,7 +16,7 @@ export default function Login() {
   };
   return (
     <div className="get-started-container">
-      {showModal && (
+      {/* {showModal && (
         <div className="modal-overlay">
           <div className="modall">
             <div className="modal-header">
@@ -33,7 +34,7 @@ export default function Login() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
       <div className="get-started-content">
         <h1>Get Started with Zori</h1>
         <h4>Welcome to Zori.</h4>
@@ -42,10 +43,21 @@ export default function Login() {
 
         <div className="login-options">
           <label className="login-option">Web3 Wallet</label>
+          <ConnectButton />
         </div>
 
         <div className="web3-form">
-          <ConnectButton />
+          <div>
+            <Link to="/marketplace">
+              NFT Marketplace <ion-icon name="arrow-forward-sharp"></ion-icon>
+            </Link>
+            <Link to="/avatar">
+              3D Avatar <ion-icon name="arrow-forward-sharp"></ion-icon>
+            </Link>
+            <Link to="/spaces">
+              3D Spaces <ion-icon name="arrow-forward-sharp"></ion-icon>
+            </Link>
+          </div>
         </div>
         <ConnectDialog />
       </div>

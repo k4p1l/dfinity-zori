@@ -1,5 +1,6 @@
 .dialog-styles span {
-  font-family: -apple-system, BlinkMacSystemFont, "Arial", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Arial", "Helvetica Neue",
+    sans-serif;
 }
 
 .img-styles {
@@ -11,11 +12,11 @@
 
 @media all and (max-width: 300px) {
   .img-styles {
-      width: 11vw;
-      max-height: 11vw;
-      height: auto;
-      padding: 0;
-      padding-right: 5px;
+    width: 11vw;
+    max-height: 11vw;
+    height: auto;
+    padding: 0;
+    padding-right: 5px;
   }
 }
 
@@ -60,28 +61,28 @@
 
 @keyframes fade-in {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes move-in {
   from {
-      transform: translateY(5%);
+    transform: translateY(5%);
   }
   to {
-      transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
 @-webkit-keyframes fade-out {
   0% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -119,13 +120,13 @@
 
 @media all and (max-width: 300px) {
   .button-label {
-      font-size: 6vw;
+    font-size: 6vw;
   }
 }
 
 .button-styles:hover {
   transform: scale(1.02);
-  font-weight: 800!important;
+  font-weight: 800 !important;
   transition: all 0.2s;
   background: white;
 }
@@ -147,8 +148,10 @@
 
 .connect-button {
   font-size: 18px;
-  background: rgb(35 35 39);
-  color: white;
+  background: #d8b6ff;
+  color: #3d0083;
+  font-weight: 700;
+  font-family: inter;
   border: none;
   padding: 10px 20px;
   display: flex;

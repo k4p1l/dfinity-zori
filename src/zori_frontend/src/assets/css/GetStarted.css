@@ -10,8 +10,9 @@
 }
 
 .get-started-content {
-  /* backdrop-filter: blur(20px); */
-  /* background-color: rgba(3, 0, 20, 0.3); */
+  backdrop-filter: blur(20px);
+  margin-top: 20px;
+  background-color: rgba(3, 0, 20, 0.3);
   padding: 10px 30px 30px 30px;
   border-radius: 20px;
   color: rgb(239, 225, 255);
@@ -26,7 +27,10 @@
 
 .login-options {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
+  margin-top: 50px;
 }
 
 .login-option {
@@ -35,7 +39,6 @@
   padding-bottom: 5px;
   font-weight: 500;
   transition: color 0.2s ease;
-  margin-top: 50px;
 }
 
 .login-option.selected {
@@ -142,6 +145,42 @@
 .modal-body {
   margin-top: 10px;
   font-size: 16px;
+}
+
+.web3-form > div {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start;  */
+  gap: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.web3-form > div a {
+  display: flex;
+  align-items: center;
+  background-color: #d8b6ff;
+  color: #3d0083;
+  gap: 5px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1em;
+  border-radius: 6px;
+  padding: 10px 12px;
+  padding-left: 8px;
+  border-bottom: 2px solid rgb(239, 225, 255);
+}
+
+.web3-form > div ion-icon {
+  opacity: 0;
+  font-size: 1.4em;
+  transform: translateX(12px);
+  transition: all 0.3s ease;
+}
+
+.web3-form > div a:hover ion-icon {
+  opacity: 1;
+  transform: translateX(4px);
 }
 
 /* GetStarted section styling */

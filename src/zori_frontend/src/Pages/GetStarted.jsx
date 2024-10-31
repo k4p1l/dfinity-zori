@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/css/Fourthpage.css";
+import "../assets/css/Waitlist.css";
 import { useNavigate } from "react-router-dom";
 
 const JoinWaitlist = () => {

@@ -39,7 +39,7 @@ function LandingPage() {
       <FirstPage />
       <SecondPage />
       <ThirdPage />
-      {/* <FourthPage /> */}
+      <FourthPage />
       <Footer />
     </>
   );
@@ -168,7 +168,7 @@ function App() {
             path="/getStarted"
             element={
               <MainLayout>
-                <JoinWaitlist />
+                <Login />
               </MainLayout>
             }
           />

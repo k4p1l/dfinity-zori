@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import logo from "./assets/zori-logo.png";
 import "./assets/css/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { useConnect } from "@connect2ic/react";
 import { Tooltip } from "react-tooltip";
 
@@ -12,7 +13,6 @@ const Navbar = () => {
   const [avatarUrl, setAvatarUrl] = useState("");
   // for dropdown menu
   const [isOpenn, setIsOpenn] = useState(false);
-  console.log(isConnected);
 
   useEffect(() => {
     if (isConnected) {
@@ -37,49 +37,52 @@ const Navbar = () => {
     <nav>
       <div className="navbar">
         <div>
-          <Link to="/">
+          <RouterLink to="/">
             <img className="logo" src={logo} alt="Zori" />
-          </Link>
+          </RouterLink>
         </div>
-        <div className={`links ${isOpen ? "open" : ""}`}>
-          <Link to="/" onClick={toggleSidebar}>
-            Home
-          </Link>
-          <Link to="/about" onClick={toggleSidebar}>
-            About Us
-          </Link>
-          <Link to="/marketplace" onClick={toggleSidebar}>
-            NFT Marketplace
-          </Link>
-          <Link to="/avatar" onClick={toggleSidebar}>
-            3D Avatar
-          </Link>
-          <Link to="/spaces" onClick={toggleSidebar}>
-            3D Spaces
-          </Link>
-        </div>
-        {isConnected ? (
-          <div
-            className="dropdown get-started-wrapper"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <img src={avatarUrl} className="user-image" alt="User Avatar" />
-
-            <div className={`dropdown-content ${isOpenn ? "show" : ""}`}>
-              <a className="logout" href="/profile">
-                Profile
-              </a>
-              <button onClick={disconnect} className="logout">
-                Logout
-              </button>
-            </div>
+        <div className="flex gap-6"> 
+          <div className={`links ${isOpen ? "open" : ""}`}>
+            <RouterLink to="/" onClick={toggleSidebar}>
+              Home
+            </RouterLink>
+            <RouterLink to="/about" onClick={toggleSidebar}>
+              About Us
+            </RouterLink>
+            <ScrollLink
+              to="faqs"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="cursor-pointer"
+              onClick={toggleSidebar}
+            >
+              FAQs
+            </ScrollLink>
           </div>
-        ) : (
-          <Link className="get-started-wrapper" to="/getStarted">
-            <button className="get-started">Get Started ✨</button>
-          </Link>
-        )}
+          {isConnected ? (
+            <div
+              className="dropdown get-started-wrapper"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={avatarUrl} className="user-image" alt="User Avatar" />
+
+              <div className={`dropdown-content ${isOpenn ? "show" : ""}`}>
+                <a className="logout" href="/profile">
+                  Profile
+                </a>
+                <button onClick={disconnect} className="logout">
+                  Logout
+                </button>
+              </div>
+            </div>
+          ) : (
+            <RouterLink className="get-started-wrapper" to="/getStarted">
+              <button className="get-started">Get Started ✨</button>
+            </RouterLink>
+          )}
+        </div>
         <div
           className={`hamburger ${isOpen ? "open" : ""}`}
           onClick={toggleSidebar}

@@ -1,125 +1,244 @@
 import "./assets/css/Fourthpage.css";
+import SlideInSection from "./Components/SlideIn";
 
 const FourthPage = () => {
   return (
-    <div className="fourth-page">
-      <h1>GET IN TOUCH</h1>
-      <form
-        className="flex flex-col gap-8 cu-form "
-        action="https://docs.google.com/forms/d/e/1FAIpQLSf-Dnw-PxOQDfcoX4d1F_daGXGsofaA4RG3WavRX-FDzkdUiw/formResponse"
-      >
-        <div className="form-field">
-          <label className="label" htmlFor="entry.188529269">
-            *Name:
-          </label>
-          <input
-            className="cu-input"
-            type="text"
-            id="entry.188529269"
-            name="entry.188529269"
-            required
-          />
+    <div id="faqs" className="fourth-page">
+      <SlideInSection>
+        <h1>FAQs</h1>
+      </SlideInSection>
+      <SlideInSection>
+        <div className="space-y-4 faq-wrapper">
+          <details className="group [&_summary::-webkit-details-marker]:hidden">
+            <summary
+              className="flex border-b-2 border-[#7a4fb3]
+          cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
+            >
+              <h2 className="font-medium question">
+                What wallets are supported by the Zori ?
+              </h2>
+
+              <svg
+                className="transition duration-300 size-5 shrink-0 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+
+            <p className="px-4 mt-4 leading-relaxed text-pink-100 answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+              veritatis molestias culpa in, recusandae laboriosam neque aliquid
+              libero nesciunt voluptate dicta quo officiis explicabo
+              consequuntur distinctio corporis earum similique!
+            </p>
+          </details>
+
+          <details className="group [&_summary::-webkit-details-marker]:hidden">
+            <summary
+              className="flex border-b-2 border-[#7a4fb3]
+          cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
+            >
+              <h2 className="font-medium question">
+                How do I buy or sell NFTs ?
+              </h2>
+
+              <svg
+                className="transition duration-300 size-5 shrink-0 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+
+            <p className="px-4 mt-4 leading-relaxed text-pink-100 answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+              veritatis molestias culpa in, recusandae laboriosam neque aliquid
+              libero nesciunt voluptate dicta quo officiis explicabo
+              consequuntur distinctio corporis earum similique!
+            </p>
+          </details>
+
+          <details className="group [&_summary::-webkit-details-marker]:hidden">
+            <summary
+              className="flex border-b-2 border-[#7a4fb3]
+          cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
+            >
+              <h2 className="font-medium question">
+                What are NET's on the zori?
+              </h2>
+
+              <svg
+                className="transition duration-300 size-5 shrink-0 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+
+            <p className="px-4 mt-4 leading-relaxed text-pink-100 answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+              veritatis molestias culpa in, recusandae laboriosam neque aliquid
+              libero nesciunt voluptate dicta quo officiis explicabo
+              consequuntur distinctio corporis earum similique!
+            </p>
+          </details>
+
+          <details className="group [&_summary::-webkit-details-marker]:hidden">
+            <summary
+              className="flex border-b-2 border-[#7a4fb3]
+          cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
+            >
+              <h2 className="font-medium question">
+                What can I do with 3d spaces on the zori ?
+              </h2>
+
+              <svg
+                className="transition duration-300 size-5 shrink-0 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+
+            <p className="px-4 mt-4 leading-relaxed text-pink-100 answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+              veritatis molestias culpa in, recusandae laboriosam neque aliquid
+              libero nesciunt voluptate dicta quo officiis explicabo
+              consequuntur distinctio corporis earum similique!
+            </p>
+          </details>
+
+          <details className="group [&_summary::-webkit-details-marker]:hidden">
+            <summary
+              className="flex border-b-2 border-[#7a4fb3]
+          cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
+            >
+              <h2 className="font-medium question">
+                How do I create an avatar on the Zori ?
+              </h2>
+
+              <svg
+                className="transition duration-300 size-5 shrink-0 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+
+            <p className="px-4 mt-4 leading-relaxed text-pink-100 answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+              veritatis molestias culpa in, recusandae laboriosam neque aliquid
+              libero nesciunt voluptate dicta quo officiis explicabo
+              consequuntur distinctio corporis earum similique!
+            </p>
+          </details>
+
+          <details className="group [&_summary::-webkit-details-marker]:hidden">
+            <summary
+              className="flex border-b-2 border-[#7a4fb3]
+          cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
+            >
+              <h2 className="font-medium question">How I can mint ?</h2>
+
+              <svg
+                className="transition duration-300 size-5 shrink-0 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+
+            <p className="px-4 mt-4 leading-relaxed text-pink-100 answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+              veritatis molestias culpa in, recusandae laboriosam neque aliquid
+              libero nesciunt voluptate dicta quo officiis explicabo
+              consequuntur distinctio corporis earum similique!
+            </p>
+          </details>
+
+          <details className="group [&_summary::-webkit-details-marker]:hidden">
+            <summary
+              className="flex border-b-2 border-[#7a4fb3]
+          cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
+            >
+              <h2 className="font-medium question">
+                What are the services Free on the zori ?
+              </h2>
+
+              <svg
+                className="transition duration-300 size-5 shrink-0 group-open:-rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+
+            <p className="px-4 mt-4 leading-relaxed text-pink-100 answer">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+              veritatis molestias culpa in, recusandae laboriosam neque aliquid
+              libero nesciunt voluptate dicta quo officiis explicabo
+              consequuntur distinctio corporis earum similique!
+            </p>
+          </details>
         </div>
-        <div className="form-field">
-          <label className="label" htmlFor="entry.406433151">
-            *Email:
-          </label>
-          <input
-            className="cu-input"
-            type="email"
-            id="entry.406433151"
-            name="entry.406433151"
-            required
-          />
-        </div>
-        {/* <div className="form-field">
-          <label className="label" htmlFor="entry.1759612096">
-            *Subject:
-          </label>
-          <input
-            type="text"
-            className="cu-input"
-            id="entry.1759612096"
-            name="entry.1759612096"
-          />
-        </div> */}
-        <div className="form-field">
-          <label className="label" htmlFor="entry.342776823">
-            *Message:
-          </label>
-          <input
-            type="text"
-            className="cu-input"
-            id="entry.342776823"
-            name="entry.342776823"
-          />
-        </div>
-        <div className="form-field">
-          <label className="label" htmlFor="entry.1419860086">
-            *What interests you in Zori?
-          </label>
-          <select
-            className="cu-input"
-            name="entry.1419860086"
-            id="entry.1419860086"
-          >
-            <option value="3D Spaces">3D Spaces</option>
-            <option value="3D Avatar">3D Avatar</option>
-            <option value="NFT's">NFTs</option>
-            <option value="All of the above">All of the Above</option>
-          </select>
-        </div>
-        <div className="form-field">
-          <label className="label" htmlFor="entry.553623353">
-            *Phone No.
-          </label>
-          <input
-            type="text"
-            className="cu-input"
-            id="entry.553623353"
-            name="entry.553623353"
-          />
-        </div>
-        <div className="form-field">
-          <label className="label" htmlFor="entry.852140100">
-            *Twitter
-          </label>
-          <input
-            type="text"
-            className="cu-input"
-            id="entry.852140100"
-            name="entry.852140100"
-          />
-        </div>
-        <div className="form-field">
-          <label className="label" htmlFor="entry.1444762476">
-            Discord
-          </label>
-          <input
-            type="text"
-            className="cu-input"
-            id="entry.1444762476"
-            name="entry.1444762476"
-          />
-        </div>
-        <div className="form-field">
-          <label className="label" htmlFor="entry.442681221">
-            Telegram
-          </label>
-          <input
-            type="text"
-            className="cu-input"
-            id="entry.442681221"
-            name="entry.442681221"
-          />
-        </div>
-        <div className="form-field">
-          <button className="submit-btn" type="submit">
-            <p>Submit</p>
-            <ion-icon name="arrow-forward-sharp"></ion-icon>
-          </button>
-        </div>
-      </form>
+      </SlideInSection>
     </div>
   );
 };
