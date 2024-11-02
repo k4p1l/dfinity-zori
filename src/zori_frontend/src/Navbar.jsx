@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from "./assets/zori-logo.png";
 import "./assets/css/Navbar.css";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { useConnect } from "@connect2ic/react";
 import { Tooltip } from "react-tooltip";
@@ -13,6 +13,8 @@ const Navbar = () => {
   const [avatarUrl, setAvatarUrl] = useState("");
   // for dropdown menu
   const [isOpenn, setIsOpenn] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     if (isConnected) {
@@ -41,14 +43,40 @@ const Navbar = () => {
             <img className="logo" src={logo} alt="Zori" />
           </RouterLink>
         </div>
-        <div className="flex gap-6"> 
+        <div className="flex gap-6">
           <div className={`links ${isOpen ? "open" : ""}`}>
-            <RouterLink to="/" onClick={toggleSidebar}>
-              Home
-            </RouterLink>
-            <RouterLink to="/about" onClick={toggleSidebar}>
+            {isHomePage ? (
+              // User is already on the home page, use ScrollLink
+              <ScrollLink
+                to="firstpage"
+                spy={true}
+                smooth={true}
+                duration={1500}
+                className="cursor-pointer"
+                onClick={toggleSidebar}
+              >
+                Home
+              </ScrollLink>
+            ) : (
+              // User is on a different page, use RouterLink to go to the home page
+              <RouterLink
+                to="/"
+                onClick={toggleSidebar}
+                className="cursor-pointer"
+              >
+                Home
+              </RouterLink>
+            )}
+            <ScrollLink
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="cursor-pointer"
+              onClick={toggleSidebar}
+            >
               About Us
-            </RouterLink>
+            </ScrollLink>
             <ScrollLink
               to="faqs"
               spy={true}

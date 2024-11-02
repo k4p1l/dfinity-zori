@@ -4,7 +4,7 @@ import SlideInSection from "../Components/SlideIn";
 
 const AboutUs = () => {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <div className="au-content">
         <div className="au-row1">
           {/* <div className="vid">

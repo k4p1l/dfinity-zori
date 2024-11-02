@@ -8,14 +8,15 @@ const Avatar = () => {
     <div className="avatar-container">
       <div className="avatar-col1">
         <h1>
-          Do you want to <br /> look alike or <br /> be <span>creative</span>{" "}
+          Do you want to <br /> look alike or <br /> be <span>creative</span>
           with <br />
           <span>AI avatar?</span>
         </h1>
         <p>
           Connect More Meaningfully: <br /> Designed for virtual meetings,
-          gaming and social fun.{" "}
+          gaming and social fun.
         </p>
+
         <div className="avatar-buttons">
           <div className="avatar-button">
             <Link to="/zori-avatar">Zori Avatar</Link>

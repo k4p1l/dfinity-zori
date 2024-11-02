@@ -5,7 +5,7 @@ import SlideInSection from "./Components/SlideIn";
 const FirstPage = () => {
   return (
     <>
-      <main className="fp-main">
+      <main id="firstpage" className="fp-main">
         <video className="bg-video" autoPlay muted loop playsInline>
           <source src={bgvid} type="video/mp4" />
         </video>
@@ -17,7 +17,7 @@ const FirstPage = () => {
               <span className="extraordinary">launchpad </span>
             </h1>
             <p>
-              Elevate your experience: The Zori, your gateway to NFTs, <br />
+              Elevate your experience: The Zori, your gateway to NFT's, <br />
               the gamified metaverse, AI Avatars, and customized avatars with
               unique styles !
             </p>

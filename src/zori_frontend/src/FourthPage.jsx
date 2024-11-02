@@ -5,7 +5,7 @@ const FourthPage = () => {
   return (
     <div id="faqs" className="fourth-page">
       <SlideInSection>
-        <h1>FAQs</h1>
+        <h1 className="mb-10">FAQs</h1>
       </SlideInSection>
       <SlideInSection>
         <div className="space-y-4 faq-wrapper">
@@ -81,7 +81,7 @@ const FourthPage = () => {
           cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent p-4 text-[#e4d1ff]"
             >
               <h2 className="font-medium question">
-                What are NET's on the zori?
+                What are NFT's on the zori?
               </h2>
 
               <svg

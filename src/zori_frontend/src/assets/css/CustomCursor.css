@@ -8,7 +8,7 @@
   pointer-events: none;
   background: #9a78ff;
   filter: blur(130px);
-  mix-blend-mode: screen;
+  mix-blend-mode: color-dodge;
   transform: translate(-50%, -50%);
   z-index: 9999;
   animation: colorChange 12s infinite;

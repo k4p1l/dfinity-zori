@@ -183,12 +183,12 @@ const Marketplace = ({ categories }) => {
           {/* <button className="view-more-button" onClick={handleViewMoreClick}>
             View More <ion-icon name="add-circle-sharp"></ion-icon>
           </button> */}
-          <section class="grid place-content-center py-6">
+          <section className="grid py-6 place-content-center">
             <button
-              class="group flex h-10 items-center gap-2 rounded-full bg-[#ceabff] pl-3 pr-4 transition-all duration-300 ease-in-out hover:bg-black hover:pl-2 hover:text-white active:bg-neutral-700"
+              className="group flex h-10 items-center gap-2 rounded-full bg-[#ceabff] pl-3 pr-4 transition-all duration-300 ease-in-out hover:bg-black hover:pl-2 hover:text-white active:bg-neutral-700"
               onClick={handleViewMoreClick}
             >
-              <span class="rounded-full bg-black p-1 text-sm transition-colors duration-300 group-hover:bg-white">
+              <span className="p-1 text-sm transition-colors duration-300 bg-black rounded-full group-hover:bg-white">
                 <svg
                   stroke="currentColor"
                   fill="none"
@@ -196,7 +196,7 @@ const Marketplace = ({ categories }) => {
                   viewBox="0 0 24 24"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="-translate-x-[200%] text-[0px] transition-all duration-300 group-hover:translate-x-0 group-hover:text-lg group-hover:text-black group-active:-rotate-45"
+                  className="-translate-x-[200%] text-[0px] transition-all duration-300 group-hover:translate-x-0 group-hover:text-lg group-hover:text-black group-active:-rotate-45"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
