@@ -64,7 +64,7 @@
   .fifth-page {
     flex-direction: column;
     /* width: auto; */
-    padding: 20px ;
+    padding: 20px;
     text-align: center;
   }
 
@@ -72,7 +72,7 @@
     width: fit-content;
   }
 
-  .fifth-page-content h1{
+  .fifth-page-content h1 {
     font-size: 3em;
   }
 
@@ -83,7 +83,7 @@
     margin-bottom: 20px;
   }
 
-  .fifth-page-content p{
+  .fifth-page-content p {
     font-size: 0.8em;
   }
 

@@ -13,6 +13,10 @@
   src: url(../../../public/fonts/upheavtt.ttf);
 }
 
+.third-page{
+  margin-bottom: 180px;
+}
+
 .third-page h1 {
   font-family: Hanson;
   font-size: 3.8em;

@@ -5,6 +5,7 @@ import SecondPage from "./SecondPage";
 import ThirdPage from "./ThirdPage";
 import FourthPage from "./FourthPage";
 import FifthPage from "./FifthPage";
+import Features from "./Features";
 import Footer from "./Footer";
 import Lenis from "lenis";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -40,7 +41,7 @@ function LandingPage() {
       <FirstPage />
       <SecondPage />
       <ThirdPage />
-      <AboutUs />
+      <Features />
       <FifthPage />
       <FourthPage />
       <Footer />

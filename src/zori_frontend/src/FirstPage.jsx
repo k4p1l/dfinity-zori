@@ -8,6 +8,7 @@ const FirstPage = () => {
       <main id="firstpage" className="fp-main">
         <video className="bg-video" autoPlay muted loop playsInline>
           <source src={bgvid} type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
         <SlideInSection>
           <div className="left-content">

@@ -1,0 +1,123 @@
+.features {
+  margin-bottom: 180px;
+}
+
+.features > h1 {
+  font-family: Hanson;
+  font-size: 3.8em;
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, rgb(206, 171, 255) 40%, #6b6eff 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 0 auto;
+  width: 80vw;
+  height: 100%;
+}
+
+.f-col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.f-row1,
+.f-row2,
+.f-col2 {
+  background: linear-gradient(
+    -40deg,
+    rgb(27, 5, 55, 0.2) 20%,
+    rgb(120, 59, 205, 0.2) 80%
+  );
+  padding: 40px;
+  backdrop-filter: blur(20px);
+  transition: all 0.2s ease;
+  border: 2px solid rgba(78, 35, 138, 0.2);
+  border-radius: 16px;
+}
+
+.f-row1:hover,
+.f-row2:hover,
+.f-col2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    -40deg,
+    rgb(27, 5, 55, 0.2) 20%,
+    rgb(120, 59, 205, 0.2) 50%
+  );
+}
+
+.f-col1 h1,
+.f-col2 h1 {
+  font-family: power;
+  font-size: 2.5em;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #ceabff 20%, #6b6eff 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+}
+
+.f-row1 h1 span {
+  font-family: helvetica;
+  font-weight: 600;
+}
+
+.f-col1 p,
+.f-col2 p {
+  font-family: helvetica;
+  font-weight: 500;
+  font-size: 0.85em;
+  color: #eeeeee;
+}
+
+.f-col2 {
+  height: 100%;
+}
+
+.f-row1,
+.f-row2 {
+  display: flex;
+  gap: 20px;
+}
+
+.f-image-wrapper img {
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .f-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .f-row1,
+  .f-row2 {
+    flex-direction: column;
+  }
+
+  .features > h1 {
+    font-size: 2.5em;
+  }
+
+  .f-col1 h1,
+  .f-col2 h1 {
+    font-size: 1.5em;
+  }
+}

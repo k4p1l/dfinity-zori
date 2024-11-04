@@ -67,16 +67,13 @@ const Navbar = () => {
                 Home
               </RouterLink>
             )}
-            <ScrollLink
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={1500}
+            <RouterLink
+              to="/about"
               className="cursor-pointer"
               onClick={toggleSidebar}
             >
               About Us
-            </ScrollLink>
+            </RouterLink>
             <ScrollLink
               to="faqs"
               spy={true}
@@ -86,6 +83,16 @@ const Navbar = () => {
               onClick={toggleSidebar}
             >
               FAQs
+            </ScrollLink>
+            <ScrollLink
+              to="features"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="cursor-pointer"
+              onClick={toggleSidebar}
+            >
+              Features
             </ScrollLink>
           </div>
           {isConnected ? (
