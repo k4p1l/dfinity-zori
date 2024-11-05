@@ -81,7 +81,7 @@ const SecondPage = () => {
             <Tilt
               glareEnable={true}
               glareMaxOpacity={0.5}
-              glareColor="#ffe23e"
+              glareColor="#ceabff"
               glarePosition="all"
               glareBorderRadius="16px"
               scale="1.18"
@@ -98,7 +98,7 @@ const SecondPage = () => {
             <Tilt
               glareEnable={true}
               glareMaxOpacity={0.5}
-              glareColor="#ffe23e"
+              glareColor="#ceabff"
               glarePosition="all"
               glareBorderRadius="16px"
               scale="1.18"
@@ -115,7 +115,7 @@ const SecondPage = () => {
             <Tilt
               glareEnable={true}
               glareMaxOpacity={0.5}
-              glareColor="#ffe23e"
+              glareColor="#ceabff"
               glarePosition="all"
               glareBorderRadius="16px"
               scale="1.18"
@@ -132,7 +132,7 @@ const SecondPage = () => {
             <Tilt
               glareEnable={true}
               glareMaxOpacity={0.5}
-              glareColor="#ffe23e"
+              glareColor="#ceabff"
               glarePosition="all"
               glareBorderRadius="16px"
               scale="1.18"
