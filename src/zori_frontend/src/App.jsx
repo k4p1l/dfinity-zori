@@ -25,10 +25,17 @@ import CustomCursor from "./CustomCursor";
 import ViewAllNFTs from "./Pages/ViewAllNFTs";
 import Login from "./Pages/Login";
 import ViewNFT from "./Pages/viewNFT";
+import zubi1 from "../public/images/nfts/zubi.jpeg";
+import zubi2 from "../public/images/nfts/zubi_2.jpg";
+import zubi3 from "../public/images/nfts/zubi_3.jpeg";
 
-import nft1 from "../public/images/nfts/1.jpg";
-import nft2 from "../public/images/nfts/5.jpg";
-import nft3 from "../public/images/nfts/4.jpg";
+import plot1 from "../public/images/nfts/Blue Plot.jpg";
+import plot2 from "../public/images/nfts/Pink Plot.jpg";
+import plot3 from "../public/images/nfts/Yellow Plot.jpg";
+
+import wearable1 from "../public/images/nfts/wearable1.jpg";
+import wearable2 from "../public/images/nfts/wearable2.jpg";
+import wearable3 from "../public/images/nfts/wearable3.jpg";
 
 import { defaultProviders } from "@connect2ic/core/providers";
 import { createClient } from "@connect2ic/core";
@@ -66,39 +73,51 @@ function App() {
 
   const categories = {
     Avatars: [
-      { id: 1, imageUrl: nft1, title: "Avatar 1", price: "2", currency: "ICP" },
-      { id: 2, imageUrl: nft2, title: "Avatar 2", price: "3", currency: "ICP" },
+      {
+        id: 1,
+        imageUrl: zubi1,
+        title: "Avatar 1",
+        price: "2",
+        currency: "ICP",
+      },
+      {
+        id: 2,
+        imageUrl: zubi2,
+        title: "Avatar 2",
+        price: "3",
+        currency: "ICP",
+      },
       {
         id: 3,
-        imageUrl: nft1,
+        imageUrl: zubi3,
         title: "Avatar 3",
         price: "2.5",
         currency: "ICP",
       },
     ],
     Land: [
-      { id: 1, imageUrl: nft3, title: "Land 1", price: "5", currency: "ICP" },
-      { id: 2, imageUrl: nft1, title: "Land 2", price: "8", currency: "ICP" },
-      { id: 3, imageUrl: nft3, title: "Land 3", price: "5", currency: "ICP" },
+      { id: 1, imageUrl: plot1, title: "Land 1", price: "5", currency: "ICP" },
+      { id: 2, imageUrl: plot2, title: "Land 2", price: "8", currency: "ICP" },
+      { id: 3, imageUrl: plot3, title: "Land 3", price: "5", currency: "ICP" },
     ],
     Wearables: [
       {
         id: 1,
-        imageUrl: nft2,
+        imageUrl: wearable1,
         title: "Wearable 1",
         price: "1",
         currency: "ICP",
       },
       {
         id: 2,
-        imageUrl: nft3,
+        imageUrl: wearable2,
         title: "Wearable 2",
         price: "1.5",
         currency: "ICP",
       },
       {
         id: 3,
-        imageUrl: nft2,
+        imageUrl: wearable3,
         title: "Wearable 3",
         price: "1",
         currency: "ICP",

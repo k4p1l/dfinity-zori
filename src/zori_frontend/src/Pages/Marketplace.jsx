@@ -3,8 +3,10 @@ import { useNavigate } from "react-router-dom";
 import "../assets/css/Marketplace.css";
 import { Link } from "react-router-dom";
 import nft1 from "../../public/images/nfts/1.jpg";
-import nft2 from "../../public/images/nfts/5.jpg";
 import nft3 from "../../public/images/nfts/4.jpg";
+import wearable1 from "../../public/images/nfts/wearable1.jpg";
+import wearable2 from "../../public/images/nfts/Dress 01[1].png"
+import zubi2 from "../../public/images/nfts/zubi_2.jpg";
 import Tilt from "react-parallax-tilt";
 import Footer from "../Footer";
 import SlideInSection from "../Components/SlideIn";
@@ -22,21 +24,21 @@ const Marketplace = ({ categories }) => {
   const slides = [
     {
       id: 1,
-      imageUrl: nft1,
+      imageUrl: zubi2,
       title: "NFT 1",
       price: "2",
       currency: "ICP",
     },
     {
       id: 2,
-      imageUrl: nft2,
+      imageUrl: wearable2,
       title: "NFT 2",
       price: "3",
       currency: "ICP",
     },
     {
       id: 3,
-      imageUrl: nft3,
+      imageUrl: wearable1,
       title: "NFT 3",
       price: "1.5",
       currency: "ICP",

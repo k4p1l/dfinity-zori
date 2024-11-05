@@ -245,10 +245,10 @@
     rgba(115, 0, 255, 0.6) 100%
   );
   backdrop-filter: blur(20px);
-  height: 400px;
+  height: 350px;
   border-radius: 20px;
   color: aliceblue;
-  width: 300px;
+  width: 280px;
   padding: 10px;
   padding-bottom: 20px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
@@ -282,7 +282,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0px;
-  bottom: 20px;
+  bottom: 10px;
   left: 20px;
   color: #e5d2ff;
   z-index: 2;
