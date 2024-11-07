@@ -25,6 +25,8 @@ import CustomCursor from "./CustomCursor";
 import ViewAllNFTs from "./Pages/ViewAllNFTs";
 import Login from "./Pages/Login";
 import ViewNFT from "./Pages/viewNFT";
+import MyCollection from "./Pages/MyCollection";
+
 import zubi1 from "../public/images/nfts/zubi.jpeg";
 import zubi2 from "../public/images/nfts/zubi_2.jpg";
 import zubi3 from "../public/images/nfts/zubi_3.jpeg";
@@ -232,6 +234,14 @@ function App() {
             element={
               <MainLayout>
                 <ProfilePage />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/my-collection"
+            element={
+              <MainLayout>
+                <MyCollection />
               </MainLayout>
             }
           />

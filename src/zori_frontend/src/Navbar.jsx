@@ -96,22 +96,33 @@ const Navbar = () => {
             </ScrollLink>
           </div>
           {isConnected ? (
-            <div
-              className="dropdown get-started-wrapper"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <img src={avatarUrl} className="user-image" alt="User Avatar" />
+            <>
+              <RouterLink to="/marketplace">
+                NFT Marketplace <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </RouterLink>
+              <RouterLink to="/avatar">
+                3D Avatar <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </RouterLink>
+              <RouterLink to="/spaces">
+                3D Spaces <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </RouterLink>
+              <div
+                className="dropdown get-started-wrapper"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <img src={avatarUrl} className="user-image" alt="User Avatar" />
 
-              <div className={`dropdown-content ${isOpenn ? "show" : ""}`}>
-                <a className="logout" href="/profile">
-                  Profile
-                </a>
-                <button onClick={disconnect} className="logout">
-                  Logout
-                </button>
+                <div className={`dropdown-content ${isOpenn ? "show" : ""}`}>
+                  <a className="logout" href="/profile">
+                    Profile
+                  </a>
+                  <button onClick={disconnect} className="logout">
+                    Logout
+                  </button>
+                </div>
               </div>
-            </div>
+            </>
           ) : (
             <RouterLink className="get-started-wrapper" to="/getStarted">
               <button className="get-started">Get Started ✨</button>
